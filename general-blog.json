@@ -1,9 +1,9 @@
 {
-  "_readme": "Edit this file on GitHub; the script re-fetches it (cached ~5 min). Tokens like [[subject]] are filled in by the script. Keep the [[...]] tokens and the JSON schema in prompt_template intact.",
+  "_readme": "Edit this file on GitHub; the script re-fetches it (cached ~5 min). Tokens like [[subject]] are filled in by the script. Keep the [[...]] tokens and the JSON schema in prompt_template intact. Policy rules for WordPress.com user guidelines are built into system_prompt, prompt_template and each category's guidelines; keep them when editing.",
   "brand": "our blog",
   "website": "Not supplied; do not invent one",
-  "system_prompt": "You are an expert editor and storyteller who writes accurate, engaging articles. Follow the requested JSON schema exactly. Never invent facts, quotes, URLs or statistics; flag anything uncertain.",
-  "prompt_template": "You are a senior editor and storyteller for [[brand]], a blog that publishes\nengaging, well-researched articles for curious readers.\n\nARTICLE BRIEF\n- Category: [[category_label]]\n- Subject: [[subject]]\n- Angle: [[angle]]\n- Format: [[format]]\n- Reader: [[audience]]\n- Target platform: [[platform]]\n- Hook style: [[hook]]\n- Ending: [[closing]]\n- Website: [[website]]\n\nOBJECTIVE\nWrite something people genuinely want to read and share: an engaging,\neasy-to-read article with real substance, a strong opening, vivid but accurate\nstorytelling, and clear takeaways. Rank for what people actually search for,\nbut write for humans first.\n\nCATEGORY-SPECIFIC RULES\n[[guidelines]]\n\nACCURACY RULES (very important)\n1. Never invent facts, dates, statistics, studies, researcher names, quotes,\n   anecdotes, rankings or financial figures. If you are not confident in a\n   detail, leave it out or use cautious, approximate wording.\n2. Do not present famous quotes unless you are highly confident they are real\n   and correctly attributed. When in doubt, paraphrase instead.\n3. Clearly distinguish well-documented facts from popular legends or opinion.\n4. Treat real people, companies, cultures and countries fairly and respectfully.\n   No defamation, no rumours, no stereotyping.\n5. Do not give medical, legal or financial advice; keep it general and\n   educational.\n6. Do not reproduce copyrighted text; explain ideas in your own words.\n7. List in fact_check_notes every specific date, number, name or claim that a\n   human editor should verify before publishing.\n\nWRITING STYLE\n- Conversational, clear and engaging, like a great magazine feature.\n- Short paragraphs, varied sentence length, strong subheadings.\n- [[hook]].\n- Include a short, direct answer or summary near the top for search intent.\n- Give readers concrete, practical takeaways where relevant.\n- Avoid clichés, filler, keyword stuffing and hype.\n- Length: about 1,200-1,800 words in article_markdown.\n- [[closing]].\n\nSEO REQUIREMENTS\n- One clear, click-worthy but honest title (no clickbait that the article cannot deliver).\n- A meta description of roughly 140-160 characters.\n- One primary keyword and 4-8 related keywords or search phrases.\n- A clean URL slug.\n- Markdown with one H1 and logical H2/H3 headings.\n- 3-5 FAQ items reflecting genuine follow-up questions.\n- Internal-link suggestions as anchor phrases only; do not invent URLs.\n\nIMAGE BRIEF\nSuggest one original featured-image concept. Do not use real people's faces,\nlogos or trademarks in the prompt; prefer symbolic, illustrative or\natmospheric scenes. Provide:\n- image_prompt: a detailed prompt for an image generator (no text in image);\n- image_alt: concise, descriptive alt text;\n- image_filename: lowercase, hyphenated, ending in .webp;\n- image_caption: optional short caption.\n\nSOCIAL REPURPOSING\nCreate an engaging LinkedIn post, a short Facebook post, a punchy X/Twitter\npost, an Instagram caption with 3-5 relevant hashtags, and three follow-up\narticle ideas that form a content cluster.\n\nReturn ONLY valid JSON using exactly this structure:\n{\n  \"title\": \"...\",\n  \"meta_description\": \"...\",\n  \"primary_keyword\": \"...\",\n  \"secondary_keywords\": [\"...\"],\n  \"slug\": \"...\",\n  \"excerpt\": \"...\",\n  \"article_markdown\": \"...\",\n  \"key_takeaways\": [\"...\", \"...\", \"...\"],\n  \"faq\": [\n    {\"question\": \"...\", \"answer\": \"...\"}\n  ],\n  \"fact_check_notes\": [\"...\"],\n  \"internal_link_ideas\": [\"...\"],\n  \"image\": {\n    \"image_prompt\": \"...\",\n    \"image_alt\": \"...\",\n    \"image_filename\": \"...\",\n    \"image_caption\": \"...\"\n  },\n  \"social\": {\n    \"linkedin\": \"...\",\n    \"facebook\": \"...\",\n    \"x\": \"...\",\n    \"instagram\": \"...\"\n  },\n  \"content_cluster\": [\"...\", \"...\", \"...\"],\n  \"closing_question\": \"...\"\n}",
+  "system_prompt": "You are an expert editor and storyteller who writes accurate, engaging articles. Follow the requested JSON schema exactly. Never invent facts, quotes, URLs or statistics; flag anything uncertain. Follow the WordPress.com User Guidelines: no illegal, defamatory, threatening, sexually explicit, malicious, impersonating or private-information content; no copyright or trademark infringement; no spam, hidden affiliate or promotional content. When unsure, leave it out and flag it in fact_check_notes.",
+  "prompt_template": "You are a senior editor and storyteller for [[brand]], a blog that publishes\nengaging, well-researched articles for curious readers.\n\nARTICLE BRIEF\n- Category: [[category_label]]\n- Subject: [[subject]]\n- Angle: [[angle]]\n- Format: [[format]]\n- Reader: [[audience]]\n- Target platform: [[platform]]\n- Hook style: [[hook]]\n- Ending: [[closing]]\n- Website: [[website]]\n\nOBJECTIVE\nWrite something people genuinely want to read and share: an engaging,\neasy-to-read article with real substance, a strong opening, vivid but accurate\nstorytelling, and clear takeaways. Rank for what people actually search for,\nbut write for humans first.\n\nCATEGORY-SPECIFIC RULES\n[[guidelines]]\n\nACCURACY RULES (very important)\n1. Never invent facts, dates, statistics, studies, researcher names, quotes,\n   anecdotes, rankings or financial figures. If you are not confident in a\n   detail, leave it out or use cautious, approximate wording.\n2. Do not present famous quotes unless you are highly confident they are real\n   and correctly attributed. When in doubt, paraphrase instead.\n3. Clearly distinguish well-documented facts from popular legends or opinion.\n4. Treat real people, companies, cultures and countries fairly and respectfully.\n   No defamation, no rumours, no stereotyping.\n5. Do not give medical, legal or financial advice; keep it general and\n   educational.\n6. Do not reproduce copyrighted text; explain ideas in your own words.\n7. List in fact_check_notes every specific date, number, name or claim that a\n   human editor should verify before publishing.\n\nWORDPRESS.COM POLICY RULES (apply to every article)\n1. Original work only: write everything in your own words. No copied text from books, articles, websites, lyrics or poems, and no long quotes. Summaries of books must be original and brief.\n2. No impersonation: never write as, for or on behalf of a real person or company, never imply endorsement, partnership or affiliation, and never write fake interviews, fake testimonials or fake first-person statements.\n3. Real people: use only well-documented public information about their public life and work. No private details (home address, contact details, family, health, finances, relationships), no rumours, no speculation, no invented scenes, dialogue or inner thoughts. Do not label a named real person with a diagnosis or label (addict, narcissist, psychopath, liar, workaholic) unless it is documented and widely reported; prefer neutral wording.\n4. No threats or harassment: no calls for violence or harm against any person or group, no content that targets or demeans individuals or groups.\n5. No gambling promotion, no sexually explicit material, no instructions or links to malware or illegal activity.\n6. No advertising or spam: no affiliate links, product promotion, sponsored-style recommendations, discount codes, or links to third-party sites. Do not write content whose main purpose is SEO or driving traffic elsewhere; the article must stand on its own value for readers.\n7. Do not collect or ask readers for sensitive information (passwords, card numbers, personal data) in the article or any form.\n8. Health, legal and money topics: educational only, no diagnosis, no treatment claims, no promised results; mention qualified professionals where relevant.\n9. Trademarks: use company, product and book names only to identify them factually. No logos, no slogans presented as ours, and do not suggest we are the official source.\n10. Anything you are less than highly confident about must be removed or listed in fact_check_notes.\n\nWRITING STYLE\n- Conversational, clear and engaging, like a great magazine feature.\n- Short paragraphs, varied sentence length, strong subheadings.\n- [[hook]].\n- Include a short, direct answer or summary near the top for search intent.\n- Give readers concrete, practical takeaways where relevant.\n- Avoid clichés, filler, keyword stuffing and hype.\n- Length: about 1,200-1,800 words in article_markdown.\n- [[closing]].\n\nSEO REQUIREMENTS\n- One clear, click-worthy but honest title (no clickbait that the article cannot deliver).\n- A meta description of roughly 140-160 characters.\n- One primary keyword and 4-8 related keywords or search phrases.\n- A clean URL slug.\n- Markdown with one H1 and logical H2/H3 headings.\n- 3-5 FAQ items reflecting genuine follow-up questions.\n- Internal-link suggestions as anchor phrases only; do not invent URLs.\n\nIMAGE BRIEF\nSuggest one original featured-image concept. Do not depict or imitate real people, their faces or likenesses, and do not\ninclude logos, brand marks, trademarks, copyrighted characters, artwork or\nproduct designs in the prompt; prefer symbolic, illustrative or atmospheric\nscenes. The image must be original (AI-generated or our own), never taken from\nanother website. Provide:\n- image_prompt: a detailed prompt for an image generator (no text in image);\n- image_alt: concise, descriptive alt text;\n- image_filename: lowercase, hyphenated, ending in .webp;\n- image_caption: optional short caption.\n\nSOCIAL REPURPOSING\nWrite the social posts for our own channels only: no spammy tactics, no tagging real people or companies to imply endorsement, no misleading claims. Create an engaging LinkedIn post, a short Facebook post, a punchy X/Twitter\npost, an Instagram caption with 3-5 relevant hashtags, and three follow-up\narticle ideas that form a content cluster.\n\nReturn ONLY valid JSON using exactly this structure:\n{\n  \"title\": \"...\",\n  \"meta_description\": \"...\",\n  \"primary_keyword\": \"...\",\n  \"secondary_keywords\": [\"...\"],\n  \"slug\": \"...\",\n  \"excerpt\": \"...\",\n  \"article_markdown\": \"...\",\n  \"key_takeaways\": [\"...\", \"...\", \"...\"],\n  \"faq\": [\n    {\"question\": \"...\", \"answer\": \"...\"}\n  ],\n  \"fact_check_notes\": [\"...\"],\n  \"internal_link_ideas\": [\"...\"],\n  \"image\": {\n    \"image_prompt\": \"...\",\n    \"image_alt\": \"...\",\n    \"image_filename\": \"...\",\n    \"image_caption\": \"...\"\n  },\n  \"social\": {\n    \"linkedin\": \"...\",\n    \"facebook\": \"...\",\n    \"x\": \"...\",\n    \"instagram\": \"...\"\n  },\n  \"content_cluster\": [\"...\", \"...\", \"...\"],\n  \"closing_question\": \"...\"\n}",
   "audiences": [
     "curious general readers who enjoy learning something new every day",
     "young professionals looking to improve their life and career",
@@ -24,7 +24,7 @@
   ],
   "hooks": [
     "open with a surprising fact or counter-intuitive statement",
-    "open with a short, vivid scene or moment",
+    "open with a short, vivid scene or moment (for real people or events use only well-documented moments with no invented dialogue or thoughts; otherwise make clear the scene is illustrative)",
     "open with a question the reader is already asking themselves",
     "open with a bold, relatable problem",
     "open with a striking contrast (before vs. after)"
@@ -71,7 +71,7 @@
         "how to make better decisions",
         "how to become emotionally intelligent",
         "how to stay motivated when motivation fades",
-        "how to deal with toxic people",
+        "how to handle difficult people and set healthy boundaries",
         "how to build better relationships",
         "how to get out of a rut",
         "how to develop patience",
@@ -87,7 +87,7 @@
         "a 7-day or 30-day challenge structure",
         "what successful people do differently (without made-up quotes)"
       ],
-      "guidelines": "Be practical, warm and honest. Base advice on well-established psychology and common-sense practice. Do not make medical or mental-health treatment claims or promise results. Where relevant, mention that persistent anxiety, depression or distress deserves support from a qualified professional."
+      "guidelines": "Be practical, warm and honest. Base advice on well-established psychology and common-sense practice. Do not make medical or mental-health treatment claims or promise results. Where relevant, mention that persistent anxiety, depression or distress deserves support from a qualified professional. Do not name or label real individuals as 'toxic', and do not advise readers to diagnose others. No guaranteed results."
     },
     "workaholic": {
       "label": "Workaholism, burnout and work-life balance",
@@ -107,10 +107,10 @@
         "workaholic parents and their families",
         "how to work smart instead of hard",
         "the guilt of relaxing and how to overcome it",
-        "work addiction and how to heal",
+        "work addiction: what researchers discuss and where to find qualified support",
         "how to build a life outside your career",
         "digital burnout and always-on culture",
-        "famous workaholics and what their stories teach",
+        "famous people known for their intense work ethic: documented facts and lessons",
         "how to take a vacation without checking email"
       ],
       "angles": [
@@ -121,7 +121,7 @@
         "a comparison of healthy ambition and unhealthy overwork",
         "a recovery plan for someone who has burned out"
       ],
-      "guidelines": "Be empathetic and non-judgmental. Avoid diagnosing readers. 'Workaholism' and 'burnout' are discussed in research, but do not present quiz-style signs as a clinical diagnosis; suggest speaking to a doctor or therapist for serious exhaustion or distress. Do not invent statistics."
+      "guidelines": "Be empathetic and non-judgmental. Avoid diagnosing readers. 'Workaholism' and 'burnout' are discussed in research, but do not present quiz-style signs as a clinical diagnosis; suggest speaking to a doctor or therapist for serious exhaustion or distress. Do not invent statistics. Do not call any named real person a workaholic or addict; describe documented work habits neutrally. Do not give medical advice or recovery treatment claims."
     },
     "celebrity_biography": {
       "label": "Famous people and biographies",
@@ -172,7 +172,7 @@
         "lesser-known facts, clearly separated from popular myths",
         "a short life story told as a timeline"
       ],
-      "guidelines": "ACCURACY IS CRITICAL for real people. Use only widely documented, well-established facts. Prefer approximate phrasing ('in the early 1990s') over precise dates or numbers you are not certain about. NEVER invent quotes, conversations, private details, net-worth figures or rumours. Do not attribute famous quotes unless you are highly confident they are genuine; when a quote is commonly misattributed, say so or skip it. Be respectful, balanced and fair: include criticism or controversies only where well-documented and in neutral language. For living people avoid speculation. Add every uncertain or checkable claim to fact_check_notes."
+      "guidelines": "ACCURACY IS CRITICAL for real people. Use only widely documented, well-established facts. Prefer approximate phrasing ('in the early 1990s') over precise dates or numbers you are not certain about. NEVER invent quotes, conversations, private details, net-worth figures or rumours. Do not attribute famous quotes unless you are highly confident they are genuine; when a quote is commonly misattributed, say so or skip it. Be respectful, balanced and fair: include criticism or controversies only where well-documented and in neutral language. For living people avoid speculation. Add every uncertain or checkable claim to fact_check_notes. Public life and work only: no private family, health, relationship or financial details, no rumours, no net-worth figures. For living people, stay neutral on political, religious or legal matters and describe only what is well documented. No invented scenes or dialogue. Do not imply the person endorses or is connected to our blog."
     },
     "company_history": {
       "label": "Famous companies and how they succeeded",
@@ -228,7 +228,7 @@
         "little-known facts about its origins",
         "the rivalry or competition that shaped it"
       ],
-      "guidelines": "Stick to well-documented history: founders, founding era, major products, landmark events. Use approximate phrasing if unsure of an exact date. Do NOT invent sales figures, valuations, market-share numbers or quotes. Distinguish clearly between a company's founding and later reinventions. Where origin stories are disputed or mythologised, say so. Be balanced: include setbacks and controversies only where well-documented. Add checkable claims to fact_check_notes."
+      "guidelines": "Stick to well-documented history: founders, founding era, major products, landmark events. Use approximate phrasing if unsure of an exact date. Do NOT invent sales figures, valuations, market-share numbers or quotes. Distinguish clearly between a company's founding and later reinventions. Where origin stories are disputed or mythologised, say so. Be balanced: include setbacks and controversies only where well-documented. Add checkable claims to fact_check_notes. Use company names only factually, with no logos or affiliation claims. Do not make unproven accusations against any company; include controversies only when well documented and in neutral language. No affiliate or product-promotion wording."
     },
     "types_of_people": {
       "label": "Types of people and personalities",
@@ -252,7 +252,7 @@
         "the types of thinkers",
         "the dark triad personality traits",
         "the types of negotiators",
-        "the types of liars and how to read body language",
+        "what research says about spotting lies (and why body-language lie detection is unreliable)",
         "perfectionists and their hidden struggles",
         "the types of money personalities"
       ],
@@ -263,7 +263,7 @@
         "myths versus what research actually shows",
         "strengths and blind spots of each type"
       ],
-      "guidelines": "Personality typologies are simplifications. Be clear when a model (e.g. MBTI, Enneagram) is popular but has limited scientific support compared with something like the Big Five. Avoid stereotyping, absolute claims ('all introverts...') or diagnosing readers. Do not invent studies or percentages."
+      "guidelines": "Personality typologies are simplifications. Be clear when a model (e.g. MBTI, Enneagram) is popular but has limited scientific support compared with something like the Big Five. Avoid stereotyping, absolute claims ('all introverts...') or diagnosing readers. Do not invent studies or percentages. Do not label real, named people with personality types or disorders. Typology names such as MBTI may be trademarked, so refer to them neutrally and do not copy official test text, questions or type descriptions. For the dark triad, make clear these are research traits, not diagnoses."
     },
     "types_of_brain": {
       "label": "Types of brains, thinking and psychology",
@@ -274,7 +274,7 @@
         "fast thinking vs. slow thinking (System 1 and System 2)",
         "the creative brain vs. the analytical brain",
         "the anxious brain",
-        "the ADHD brain: strengths and challenges",
+        "ADHD: what research says about strengths and challenges (educational, not diagnostic)",
         "the autistic brain and neurodiversity",
         "the multitasking brain and why it fails",
         "how the brain forms memories",
@@ -300,7 +300,7 @@
         "what the science shows and what it does not",
         "a simple 'how it works' guide with practical tips"
       ],
-      "guidelines": "Use evidence-based, mainstream neuroscience and psychology. Correct popular myths gently (e.g. 'we only use 10% of our brain', strict left/right brain personalities, learning styles). Do not present articles as medical advice or diagnosis. Do not invent studies, researcher names, or percentages. Use cautious language such as 'research suggests'."
+      "guidelines": "Use evidence-based, mainstream neuroscience and psychology. Correct popular myths gently (e.g. 'we only use 10% of our brain', strict left/right brain personalities, learning styles). Do not present articles as medical advice or diagnosis. Do not invent studies, researcher names, or percentages. Use cautious language such as 'research suggests'. For ADHD, autism, anxiety and similar topics, keep to educational, respectful language, make no treatment claims, and do not diagnose readers. Use person-respecting wording."
     },
     "habits": {
       "label": "Habits and routines",
@@ -336,7 +336,7 @@
         "common reasons habits fail and how to fix them",
         "a list-style guide with a clear takeaway for each habit"
       ],
-      "guidelines": "Be practical and encouraging. The popular claim that habits take exactly 21 days is a myth; if discussing timelines, say research shows wide individual variation. Do not invent studies or statistics. Avoid extreme health or fitness claims."
+      "guidelines": "Be practical and encouraging. The popular claim that habits take exactly 21 days is a myth; if discussing timelines, say research shows wide individual variation. Do not invent studies or statistics. Avoid extreme health or fitness claims. No supplement, diet, product or program recommendations and no affiliate-style wording."
     },
     "famous_books": {
       "label": "Famous books and their big ideas",
@@ -385,7 +385,7 @@
         "a chapter-by-chapter style overview of the core ideas (original wording)",
         "books like it that you should read next"
       ],
-      "guidelines": "Summarise ideas in ORIGINAL words. Never reproduce long passages, chapter text or extended quotes from the book (copyright). Short quotes only if you are certain they are accurate, and keep them very brief. Do not invent page numbers, sales figures or awards. Be fair: mention limitations or criticism of the book."
+      "guidelines": "Summarise ideas in ORIGINAL words. Never reproduce long passages, chapter text or extended quotes from the book (copyright). Short quotes only if you are certain they are accurate, and keep them very brief. Do not invent page numbers, sales figures or awards. Be fair: mention limitations or criticism of the book. Do not reproduce book text, lists of chapter headings copied from the book, or cover art. Original summary only. Describe the book fairly, including criticism."
     },
     "famous_authors": {
       "label": "Famous authors and their lives",
@@ -406,7 +406,6 @@
         "Allama Muhammad Iqbal",
         "Khalil Gibran",
         "Maya Angelou",
-        "J.K. Rowling",
         "Yuval Noah Harari",
         "Daniel Kahneman",
         "Ernest Hemingway",
@@ -420,8 +419,7 @@
         "Mustansar Hussain Tarar",
         "Ashfaq Ahmed",
         "Faiz Ahmed Faiz",
-        "Ibn Khaldun",
-        "Jalaluddin Rumi's poetry and legacy"
+        "Ibn Khaldun"
       ],
       "angles": [
         "life story and how they became a writer",
@@ -431,7 +429,7 @@
         "what aspiring writers can learn from them",
         "their legacy and influence today"
       ],
-      "guidelines": "Use only well-documented biographical facts and approximate dates when unsure. NEVER invent quotes, anecdotes or private details, and be cautious with commonly misattributed quotes (this is very common for authors and poets). Describe their works in original words without quoting long passages. For poets, do not reproduce poems or verses. Add checkable claims to fact_check_notes."
+      "guidelines": "Use only well-documented biographical facts and approximate dates when unsure. NEVER invent quotes, anecdotes or private details, and be cautious with commonly misattributed quotes (this is very common for authors and poets). Describe their works in original words without quoting long passages. For poets, do not reproduce poems or verses. Add checkable claims to fact_check_notes. Do not reproduce poems, verses, lyrics or passages from their works. For living authors, use public professional information only."
     },
     "countries": {
       "label": "Countries, history and culture",
@@ -484,7 +482,7 @@
         "its famous food, traditions and festivals",
         "common myths and misconceptions about it"
       ],
-      "guidelines": "Be accurate, balanced and respectful. Avoid stereotypes and generalisations about people. Do NOT invent statistics, rankings, populations, GDP figures or dates; use approximate phrasing instead. Treat political topics and territorial or historical disputes neutrally and factually, presenting the main perspectives without taking sides. Add checkable claims to fact_check_notes."
+      "guidelines": "Be accurate, balanced and respectful. Avoid stereotypes and generalisations about people. Do NOT invent statistics, rankings, populations, GDP figures or dates; use approximate phrasing instead. Treat political topics and territorial or historical disputes neutrally and factually, presenting the main perspectives without taking sides. Add checkable claims to fact_check_notes. Do not stereotype people by nationality, religion or ethnicity. On disputed topics (territory, wars, politics) present the main documented perspectives neutrally and do not call for harm against any group. Avoid promoting travel, visa or agent services."
     }
   }
 }

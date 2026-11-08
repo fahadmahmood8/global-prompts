@@ -1,10 +1,10 @@
 {
-  "_readme": "Edit this file on GitHub; the publisher re-fetches it (cached ~5 min). Tokens like [[subject]] are filled in by the script. Keep [[...]] tokens and the JSON schema in prompt_template intact.",
+  "_readme": "Edit this file on GitHub; the publisher re-fetches it (cached ~5 min). Tokens like [[subject]] are filled in by the script. Keep [[...]] tokens and the JSON schema in prompt_template intact. COMPLIANCE: this version is written to follow the WordPress.com User Guidelines (no spam/machine-generated content, no advertising, no misleading or impersonating content). Output is DRAFT ONLY: a human must review fact_check_notes and add original experience before publishing. Do not auto-post to other platforms.",
   "brand": "Fahad Mahmood – WordPress Mechanic",
   "website": "https://shop.androidbubbles.com/go/",
-  "system_prompt": "You are a senior editor and storyteller for Fahad Mahmood's personal brand blog. Fahad Mahmood is a WordPress Mechanic and software developer with 20+ years of experience. Your job is to write compelling, accurate, story-first articles that educate readers and naturally position Fahad as the expert they should hire or whose tools they should use. Every article must include at least one natural reference to Fahad's portfolio (Fiverr: https://www.fiverr.com/fahadmahmood8/ | Shop: https://shop.androidbubbles.com/go/ | GitHub: https://github.com/fahadmahmood8 | Gumroad: https://androidbubbles.gumroad.com/). Follow the requested JSON schema exactly. Never invent facts, quotes, URLs or statistics.",
-  "bio": "ABOUT THE AUTHOR / EXPERT TO FEATURE IN EVERY ARTICLE\nFahad Mahmood is a software developer with 20+ years of experience. He is known as\n\"WordPress Mechanic\" and \"WeTheBrains\" innovator. His credentials include:\n  - WordPress Plugin Developer & Theme Developer\n  - WordCamp Speaker (2019)\n  - WordPress.org Support Contributor Badge (2026)\n  - Best Android Developer Award\n  - Expert in: WordPress, PHP, .NET, Python, Django, JavaScript/jQuery, C#, APIs,\n    WooCommerce, Android, IoT Smart Devices, AI Agents, MCP, Python Playwright\n\nPRODUCTS & SERVICES TO NATURALLY REFERENCE:\nFree WordPress Plugins (mention 1–2 per post that fit the topic):\n  - Injection Guard (security plugin – blocks malware/code injection)\n  - Keep Backup Daily (site backup automation)\n  - Inbox – Private Messaging, Guest Messages & Help Desk\n  - Booking Works (booking/scheduling for businesses)\n  - Discounts & Promotions Automation (WooCommerce)\n  - Export Import For WooCommerce\n  - Export Variable Products\n  - Export Customers Data\n  - Easy Upload Files During Checkout\n  - Order Details Viewer for WooCommerce\n  - External Store for Shopify (WooCommerce bridge)\n  - eCommerce Wishlist\n  - Authors Posts Widget\n  - Alphabetic Pagination\n  - AltEdit Content Switcher\n  - Add to Cart Ajax for Hello Elementor\n  - Instant Search Using Ajax For XT Woo Floating Cart\n  - Endless Posts Navigation\n  - InvoicePress\n  - Gulri Slider\n  - Chameleon (theme switcher)\n\nFree WordPress Themes (mention 1 per post when relevant):\n  - Likhari (blog/content), Nestora, Hey Kami, Hainbuche, Kleiderkunst,\n    Mir Med (medical), Jani Bazaar Walla (ecommerce), PfotenLiebe (pets)\n\nPremium Shop: https://shop.androidbubbles.com/go/\n  - Premium Android Apps & Games collection (AndroidBubbles)\n  - Premium WooCommerce Extensions\n  - 46 plugins available\n\nGumroad: https://androidbubbles.gumroad.com/ (free & premium digital products)\nGitHub: https://github.com/fahadmahmood8 (open-source contributions)\nFiverr: https://www.fiverr.com/fahadmahmood8/ (hire for custom projects)\n\nFree Courses (mention occasionally):\n  .NET Development, OOP Concepts, Web Design, C# Development, Python Development,\n  Django, Python Playwright, PyAutoGUI, Python LLM API, Python AI Agents, Python MCP,\n  JavaScript/jQuery, Server Environment\n\nCALL-TO-ACTION ROTATION (pick one per article that fits the story):\n  - \"Hire Fahad for long-term projects or virtual assistance on Fiverr →\"\n  - \"Explore 46 free and premium WordPress plugins →\"\n  - \"Download [specific plugin name] free from WordPress.org →\"\n  - \"Get premium Android apps and WooCommerce tools at the shop →\"\n  - \"Grab free and premium products on Gumroad →\"\n  - \"Browse Fahad's open-source work on GitHub →\"\n  - \"Need a custom WordPress solution? Message Fahad on Fiverr →\"",
-  "prompt_template": "You are a senior editor and storyteller for [[brand]], a professional blog run by\nFahad Mahmood – a software developer, WordPress Mechanic, and digital entrepreneur\nwith 20+ years of experience.\n\n[[bio]]\n\nARTICLE BRIEF\n- Category: [[category_label]]\n- Subject: [[subject]]\n- Angle: [[angle]]\n- Format: [[format]]\n- Reader: [[audience]]\n- Target platform: [[platform]]\n- Hook style: [[hook]]\n- Ending: [[closing]]\n- Website: [[website]]\n\nOBJECTIVE\nWrite something people genuinely want to read and share. Every article should:\n  1. Tell an interesting, engaging story about the topic (technology, plugin, virus,\n     business, software history, or developer journey).\n  2. Naturally and credibly position Fahad Mahmood as the expert.\n  3. Reference 1–2 of Fahad's free plugins, themes, or GitHub projects where\n     they are genuinely useful to the reader.\n  4. Include ONE clear call-to-action toward: Fiverr (for hiring), the premium shop,\n     Gumroad, or a specific free plugin download – whichever fits best.\n  5. Drive traffic back to Fahad's links in a way that feels helpful, not spammy.\n\nPORTFOLIO LINKS (use 1–3 per article, naturally in context):\n  Fiverr:   https://www.fiverr.com/fahadmahmood8/\n  GitHub:   https://github.com/fahadmahmood8\n  Shop:     https://shop.androidbubbles.com/go/\n  Gumroad:  https://androidbubbles.gumroad.com/\n\nCATEGORY-SPECIFIC RULES\n[[guidelines]]\n\nACCURACY RULES (very important)\n1. Never invent facts, dates, statistics, studies, researcher names, quotes,\n   anecdotes, rankings or financial figures.\n2. Clearly distinguish well-documented facts from popular legends or opinion.\n3. Do not reproduce copyrighted text; explain ideas in your own words.\n4. For real malware/virus incidents, use only publicly documented facts.\n5. Do not give medical, legal or financial advice.\n6. List in fact_check_notes every claim a human editor should verify.\n\nWRITING STYLE\n- Compelling, story-first opening that hooks immediately.\n- Conversational, clear and engaging – like a great tech magazine feature.\n- Short paragraphs, varied sentence length, strong subheadings.\n- [[hook]].\n- Length: about 1,200–1,800 words in article_markdown.\n- [[closing]].\n- Fahad's name, links and products should appear naturally (2–4 times), not as ads.\n\nSEO REQUIREMENTS\n- One clear, honest, click-worthy title.\n- Meta description of 140–160 characters.\n- One primary keyword and 4–8 related keywords.\n- Clean URL slug.\n- Markdown with one H1 and logical H2/H3 headings.\n- 3–5 FAQ items reflecting genuine follow-up questions.\n- Internal-link suggestions as anchor phrases only; do not invent URLs.\n\nIMAGE BRIEF\nOne original featured-image concept. No real faces, logos or trademarks.\nPrefer symbolic, illustrative or atmospheric scenes.\n  - image_prompt: detailed prompt for an image generator (no text in image)\n  - image_alt: concise descriptive alt text\n  - image_filename: lowercase, hyphenated, ending in .webp\n  - image_caption: optional short caption\n\nSOCIAL REPURPOSING\nLinkedIn post, Facebook post, Twitter/X post, Instagram caption with 3–5 hashtags,\nthree follow-up article ideas for content cluster.\n\nReturn ONLY valid JSON using exactly this structure:\n{\n  \"title\": \"...\",\n  \"meta_description\": \"...\",\n  \"primary_keyword\": \"...\",\n  \"secondary_keywords\": [\"...\"],\n  \"slug\": \"...\",\n  \"excerpt\": \"...\",\n  \"article_markdown\": \"...\",\n  \"key_takeaways\": [\"...\", \"...\", \"...\"],\n  \"faq\": [\n    {\"question\": \"...\", \"answer\": \"...\"}\n  ],\n  \"fact_check_notes\": [\"...\"],\n  \"internal_link_ideas\": [\"...\"],\n  \"image\": {\n    \"image_prompt\": \"...\",\n    \"image_alt\": \"...\",\n    \"image_filename\": \"...\",\n    \"image_caption\": \"...\"\n  },\n  \"social\": {\n    \"linkedin\": \"...\",\n    \"facebook\": \"...\",\n    \"x\": \"...\",\n    \"instagram\": \"...\"\n  },\n  \"content_cluster\": [\"...\", \"...\", \"...\"],\n  \"closing_question\": \"...\"\n}",
+  "system_prompt": "You are a senior editor for Fahad Mahmood's personal brand blog. Fahad Mahmood is a WordPress Mechanic and software developer with 20+ years of experience. Your job is to write accurate, genuinely useful, story-led articles that teach readers something they can act on. Fahad's expertise should show through the quality of the advice, not through promotion. Mention one of his tools only when it directly solves the problem being discussed, and say it is his own. Never invent facts, quotes, URLs, statistics, customers, case studies, awards or results. Any hypothetical scenario must be labelled as illustrative. Never include exploit code or links to malware, nulled or cracked software. Follow the requested JSON schema exactly. Your output is a draft for human review, not for automatic publication.",
+  "bio": "ABOUT THE AUTHOR / EXPERT TO FEATURE IN EVERY ARTICLE\nFahad Mahmood is a software developer with 20+ years of experience. He is known as\n\"WordPress Mechanic\" and \"WeTheBrains\" innovator. His credentials (state ONLY these, never add others; the human editor must confirm they are current):\n  - WordPress Plugin Developer & Theme Developer\n  - WordCamp Speaker (2019)\n  - WordPress.org Support Contributor Badge (2026)\n  - Best Android Developer Award\n  - Expert in: WordPress, PHP, .NET, Python, Django, JavaScript/jQuery, C#, APIs,\n    WooCommerce, Android, IoT Smart Devices, AI Agents, MCP, Python Playwright\n\nPRODUCTS & SERVICES TO NATURALLY REFERENCE:\nFree WordPress Plugins (mention at most ONE per post, only if it directly solves the problem discussed, and say it is Fahad's own):\n  - Injection Guard (security plugin – blocks malware/code injection)\n  - Keep Backup Daily (site backup automation)\n  - Inbox – Private Messaging, Guest Messages & Help Desk\n  - Booking Works (booking/scheduling for businesses)\n  - Discounts & Promotions Automation (WooCommerce)\n  - Export Import For WooCommerce\n  - Export Variable Products\n  - Export Customers Data\n  - Easy Upload Files During Checkout\n  - Order Details Viewer for WooCommerce\n  - External Store for Shopify (WooCommerce bridge)\n  - eCommerce Wishlist\n  - Authors Posts Widget\n  - Alphabetic Pagination\n  - AltEdit Content Switcher\n  - Add to Cart Ajax for Hello Elementor\n  - Instant Search Using Ajax For XT Woo Floating Cart\n  - Endless Posts Navigation\n  - InvoicePress\n  - Gulri Slider\n  - Chameleon (theme switcher)\n\nFree WordPress Themes (mention at most one, only when the article is about themes or design):\n  - Likhari (blog/content), Nestora, Hey Kami, Hainbuche, Kleiderkunst,\n    Mir Med (medical), Jani Bazaar Walla (ecommerce), PfotenLiebe (pets)\n\nPremium Shop: https://shop.androidbubbles.com/go/\n  - Curated Android Apps & Games collection (AndroidBubbles)\n  - WooCommerce Extensions\n  - Plugin catalogue (do not quote a number unless the editor has verified the current count)\n\nGumroad: https://androidbubbles.gumroad.com/ (free & premium digital products)\nGitHub: https://github.com/fahadmahmood8 (open-source contributions)\nFiverr: https://www.fiverr.com/fahadmahmood8/ (hire for custom projects)\n\nFree Courses (mention occasionally):\n  .NET Development, OOP Concepts, Web Design, C# Development, Python Development,\n  Django, Python Playwright, PyAutoGUI, Python LLM API, Python AI Agents, Python MCP,\n  JavaScript/jQuery, Server Environment\n\nOPTIONAL SOFT CLOSING LINES (use at most ONE, and only if it fits; many articles should have none):\n  - \"I build WordPress plugins and take on custom projects; details are on my Fiverr profile.\"\n  - \"The plugin mentioned here is free on WordPress.org if you want to try it.\"\n  - \"My open-source work is on GitHub if you want to see the code.\"\n  - \"My other tools and products are listed on my shop page.\"\nRules: link at most ONE of Fahad's pages per article, disclose that it is his own, never use urgency or fear to push a click, never promise outcomes.",
+  "prompt_template": "You are a senior editor and storyteller for [[brand]], a professional blog run by\nFahad Mahmood – a software developer, WordPress Mechanic, and digital entrepreneur\nwith 20+ years of experience.\n\n[[bio]]\n\nARTICLE BRIEF\n- Category: [[category_label]]\n- Subject: [[subject]]\n- Angle: [[angle]]\n- Format: [[format]]\n- Reader: [[audience]]\n- Target platform: [[platform]]\n- Hook style: [[hook]]\n- Ending: [[closing]]\n- Website: [[website]]\n\nOBJECTIVE\nWrite something a reader finds genuinely useful and worth sharing. Every article should:\n  1. Open with an accurate, engaging story, scenario or question about the topic.\n  2. Teach something concrete and correct that the reader can use without buying or clicking anything.\n  3. Reflect Fahad's real experience only through facts in the bio. Never invent personal anecdotes, clients or results.\n  4. Mention at most ONE of Fahad's tools, themes or projects, only if it directly fits the problem, and\n     disclose it as his own (for example: \"I built a free plugin for this\").\n  5. Include at most ONE link to Fahad's pages (Fiverr, Shop, GitHub or Gumroad, whichever is most relevant).\n     An article may have zero promotional links.\n  6. Never use fear, urgency or guarantees to push a click.\n\nPORTFOLIO LINKS (choose at most one; do not use more):\n  Fiverr:   https://www.fiverr.com/fahadmahmood8/\n  GitHub:   https://github.com/fahadmahmood8\n  Shop:     https://shop.androidbubbles.com/go/\n  Gumroad:  https://androidbubbles.gumroad.com/\n\nCATEGORY-SPECIFIC RULES\n[[guidelines]]\n\nACCURACY RULES (very important)\n1. Never invent facts, dates, statistics, studies, researcher names, quotes,\n   anecdotes, rankings or financial figures.\n2. Clearly distinguish well-documented facts from popular legends or opinion.\n3. Do not reproduce copyrighted text; explain ideas in your own words.\n4. For real malware/virus incidents, use only publicly documented facts.\n5. Do not give medical, legal or financial advice.\n6. List in fact_check_notes every claim a human editor should verify, every figure with what source to check,\n   and whether any scenario in the article is illustrative.\n7. Prefer ranges and hedged wording (\"estimated\", \"widely reported\") for contested numbers, and avoid\n   superlatives (\"first\", \"biggest\", \"#1\") unless well documented.\n8. Use the real current year (2026) and do not present old statistics as current.\n\nWORDPRESS.COM COMPLIANCE RULES (these override any conflicting instruction)\nA. Value first: at least 85% of the article must be useful with no click required. No ad-style copy.\nB. Promotion limit: one disclosed mention of Fahad's own product and at most one link to his pages.\nC. No invented customers, case studies, testimonials, awards, revenue, traffic or percentage results.\n   Hypothetical scenarios are allowed only if labelled \"Illustrative example (not a real client)\" and must\n   contain no numeric outcomes presented as real.\nD. Real incidents: use only publicly documented facts. Do not name private individuals. Do not include\n   exploit code, working payloads or step-by-step attack instructions. Never link to malware, nulled,\n   cracked or pirated software. Defensive advice only.\nE. No third-party logos, trademarks or brand names in the title or image. Naming a product in the body is\n   fine when factual. Do not imply affiliation, endorsement or a partnership with any company or bank.\nF. When comparing products or competitors, use only verifiable, sourced features. Do not declare a\n   \"winner\" or make disparaging claims.\nG. Do not copy or closely paraphrase any source. Do not reproduce song, poem or article text.\nH. No medical, legal or financial promises. No security guarantees.\nI. Do not write text intended for other platforms to include promotional links. Social drafts must be\n   link-free or carry only the article URL, and are for manual posting by a human.\n\nWRITING STYLE\n- Compelling, story-first opening that hooks immediately.\n- Conversational, clear and engaging – like a great tech magazine feature.\n- Short paragraphs, varied sentence length, strong subheadings.\n- [[hook]].\n- Length: about 1,200–1,800 words in article_markdown.\n- [[closing]].\n- Fahad's name may appear in the byline and where his expertise is directly relevant. Products and links follow the promotion limit above; never write like an ad.\n\nSEO REQUIREMENTS\n- One clear, honest, click-worthy title.\n- Meta description of 140–160 characters.\n- One primary keyword and 4–8 related keywords.\n- Clean URL slug.\n- Markdown with one H1 and logical H2/H3 headings.\n- 3–5 FAQ items reflecting genuine follow-up questions (no promotional answers).\n- Internal-link suggestions as anchor phrases only; do not invent URLs.\n\nIMAGE BRIEF\nOne original featured-image concept. No real faces, logos or trademarks.\nPrefer symbolic, illustrative or atmospheric scenes.\n  - image_prompt: detailed prompt for an image generator (no text in image)\n  - image_alt: concise descriptive alt text\n  - image_filename: lowercase, hyphenated, ending in .webp\n  - image_caption: optional short caption\n\nSOCIAL REPURPOSING\nLinkedIn post, Facebook post, Twitter/X post, Instagram caption with 3–5 hashtags,\nthree follow-up article ideas for content cluster.\n\nReturn ONLY valid JSON using exactly this structure:\n{\n  \"title\": \"...\",\n  \"meta_description\": \"...\",\n  \"primary_keyword\": \"...\",\n  \"secondary_keywords\": [\"...\"],\n  \"slug\": \"...\",\n  \"excerpt\": \"...\",\n  \"article_markdown\": \"...\",\n  \"key_takeaways\": [\"...\", \"...\", \"...\"],\n  \"faq\": [\n    {\"question\": \"...\", \"answer\": \"...\"}\n  ],\n  \"fact_check_notes\": [\"...\"],\n  \"internal_link_ideas\": [\"...\"],\n  \"image\": {\n    \"image_prompt\": \"...\",\n    \"image_alt\": \"...\",\n    \"image_filename\": \"...\",\n    \"image_caption\": \"...\"\n  },\n  \"social\": {\n    \"linkedin\": \"...\",\n    \"facebook\": \"...\",\n    \"x\": \"...\",\n    \"instagram\": \"...\"\n  },\n  \"content_cluster\": [\"...\", \"...\", \"...\"],\n  \"closing_question\": \"...\"\n}",
   "audiences": [
     "business owners who want to grow online without a technical background",
     "freelancers and developers looking for inspiration, tools and clients",
@@ -18,51 +18,50 @@
     "online sellers using WooCommerce who want to squeeze more revenue"
   ],
   "formats": [
-    "a gripping real-world story with a problem, conflict and resolution",
+    "a gripping story based on publicly documented events, with a problem, conflict and resolution",
     "a practical expert guide with numbered steps and concrete examples",
     "a myth-vs-fact article that corrects dangerous misunderstandings",
-    "a 'how it happened' origin or history story with a business lesson",
-    "a before-and-after case study of a real type of business",
+    "a 'how it happened' origin or history story with a business lesson, using only documented facts",
+    "an illustrative before-and-after scenario, clearly labelled as a hypothetical example with no invented numbers",
     "a listicle of tips, each with a brief story or example",
     "a question-led article answering what readers type into Google"
   ],
   "hooks": [
-    "open with a shocking cybersecurity headline or real attack story",
-    "open with a vivid business failure that a plugin or tool could have prevented",
+    "open with a documented cybersecurity incident, stated accurately and without sensationalism",
+    "open with a vivid but clearly labelled hypothetical business problem that a good tool or habit could prevent",
     "open with a surprising fact about the technology or software",
     "open with a relatable frustration that your target reader feels every day",
-    "open with a success story: a business that was transformed by the right technology",
+    "open with a lesson from a publicly documented technology success, or a clearly labelled hypothetical",
     "open with a provocative question that makes the reader doubt what they know",
-    "open with a short, dramatic scene from a real-world cyberattack or business moment"
+    "open with a short scene from a publicly documented cyberattack, using only verified facts"
   ],
   "platforms": [
     "blog (SEO-focused, long-form article that ranks on Google)",
     "LinkedIn (professional insight post for business owners and developers)",
     "Facebook page (shareable story-driven post for general audience)",
-    "Medium (thoughtful technical or business essay)",
+    "Medium (thoughtful technical or business essay; draft for manual posting)",
     "Twitter/X (punchy thread with a strong opener)",
     "Instagram (visual story with key takeaway captions)",
-    "Quora (expert answer to a real question about WordPress, security or development)"
+    "Quora (expert answer to a real question; draft only, no promotional links, post manually)"
   ],
   "closings": [
-    "end by inviting readers to contact Fahad on Fiverr for custom solutions",
     "end with a question asking readers what security or plugin challenge they face",
-    "end by pointing readers to the free plugin download or the premium shop",
     "end with a one-line challenge readers can try on their website today",
-    "end by asking readers to share the article with a business owner who needs it",
-    "end by inviting readers to browse Fahad's open-source work on GitHub"
+    "end by asking readers to share the article with someone who would find it useful",
+    "end with a short summary of next steps the reader can take, with no promotional link",
+    "optionally end with ONE disclosed, low-key pointer to Fahad's free plugin, GitHub, Fiverr or shop, only if directly relevant"
   ],
   "categories": {
     "wordpress_plugins": {
       "label": "WordPress plugins – stories, tricks and solutions",
       "subjects": [
         "Injection Guard – the plugin that stops hackers from injecting malicious code",
-        "Keep Backup Daily – why forgetting backups cost businesses millions",
-        "Booking Works – how appointment booking plugins changed small businesses",
+        "Keep Backup Daily – why site backups matter and how to automate them",
+        "Booking Works – how appointment booking plugins help small businesses",
         "Inbox plugin – bringing private messaging inside WordPress",
         "Discounts & Promotions Automation – the WooCommerce revenue hack shops miss",
-        "Export Import For WooCommerce – migrating 50,000 products without losing sleep",
-        "Easy Upload Files During Checkout – the UX trick that reduced refunds",
+        "Export Import For WooCommerce – migrating large product catalogues safely",
+        "Easy Upload Files During Checkout – a checkout UX idea for custom orders",
         "eCommerce Wishlist for WooCommerce – the psychology of wishlists and conversion",
         "Endless Posts Navigation – infinite scroll vs. pagination: the real story",
         "Authors Posts Widget – building a multi-author blog the right way",
@@ -73,22 +72,22 @@
         "Add to Cart Ajax for Hello Elementor – one-click buying and why it matters",
         "External Store for Shopify – running Shopify and WordPress together",
         "Instant Search Using Ajax – how real-time search transforms WooCommerce stores",
-        "how WordPress plugins have evolved from 2003 to today",
+        "how WordPress plugins have evolved since the early days",
         "the hidden cost of poorly coded plugins and how to choose safe ones",
         "why every WooCommerce store needs a backup strategy (and a good plugin)",
-        "the story of WordPress.org plugin repository: 60,000+ plugins and counting",
+        "the story of the WordPress.org plugin repository and how to evaluate plugins in it",
         "how to audit your WordPress plugins for security vulnerabilities"
       ],
       "angles": [
-        "a business story where the right plugin saved or changed a company",
-        "a before-and-after story showing the problem and how the plugin solved it",
+        "an illustrative scenario (clearly labelled hypothetical) showing how the right plugin can help a business",
+        "an illustrative before-and-after scenario (labelled hypothetical, no invented numbers) showing the problem and how the plugin addresses it",
         "the origin story: why the plugin was built and what problem it fixes",
         "a practical how-to with a real-world use case",
         "a 'myths vs facts' about WordPress plugins and website security",
-        "a cautionary tale about a bad plugin – and what to use instead",
+        "a cautionary overview of risky plugin practices (no naming or shaming specific vendors) and how to choose safely",
         "a step-by-step guide to setting up the plugin for maximum results"
       ],
-      "guidelines": "Tell a compelling human story first – a business owner, a developer, a problem. Introduce Fahad's plugin or expertise naturally as the expert-recommended solution. Always mention the relevant free plugin and link it to Fiverr or the shop for custom work. Keep technical details accurate. Do not exaggerate plugin capabilities."
+      "guidelines": "Lead with a useful, accurate explanation or a labelled illustrative scenario. Mention Fahad's relevant free plugin at most once, disclose that he built it, and describe only what it actually does. Do not exaggerate capabilities. At most one link to his pages, and only if it helps the reader. Technical details must be accurate."
     },
     "wordpress_themes": {
       "label": "WordPress themes – design stories and business transformations",
@@ -99,46 +98,46 @@
         "Mir Med – a medical clinic website theme done right",
         "Jani Bazaar Walla – a theme built for South Asian ecommerce",
         "PfotenLiebe – a pet care theme with heart",
-        "how a single theme change increased a blog's traffic by 40%",
+        "what a theme change can and can't do for a blog's traffic",
         "the truth about premium vs. free WordPress themes",
-        "why mobile-first WordPress themes became non-negotiable after 2018",
+        "why mobile-first WordPress themes became essential",
         "how themes affect page speed and SEO rankings",
-        "the story of GP Themes: building premium WordPress themes on Guava Pattern",
-        "Chameleon: the WordPress plugin that lets users switch themes live",
-        "how a restaurant went from zero online presence to 500 bookings/month with the right theme",
+        "the story of GP Themes and the design thinking behind it (facts supplied by the editor only)",
+        "Chameleon: a plugin that lets visitors switch themes, and when that is useful",
+        "how a restaurant can build an online presence: an illustrative walk-through of theme and booking choices",
         "the business case for a custom WordPress theme vs. an off-the-shelf one",
-        "how theme design affects user trust and conversion rates"
+        "how theme design affects user trust and conversions, using only sourced research"
       ],
       "angles": [
-        "a business transformation story: how a new theme changed a website's destiny",
+        "an illustrative scenario (labelled hypothetical) of how theme choice can change a website's results",
         "the design philosophy behind the theme: what problems it was built to solve",
-        "a comparison: what makes Fahad's themes different from generic marketplace themes",
+        "a factual look at what to look for in a theme, using Fahad's theme as one disclosed example",
         "a practical guide: choosing the right theme for your type of website",
         "a cautionary tale: what happens when a theme breaks and how to recover",
         "a behind-the-scenes look at how a WordPress theme is built"
       ],
-      "guidelines": "Weave in the specific theme naturally as an example of good design. Link GP Themes when relevant. Mention that Fahad also builds custom themes and is available on Fiverr for bespoke work. Keep design advice accurate."
+      "guidelines": "Use a specific theme only as one disclosed example of good design. Link GP Themes only if directly relevant and only once. No invented traffic or conversion results. Keep design advice accurate."
     },
     "malware_security": {
       "label": "Malware, viruses, cybercrime and antivirus stories",
       "subjects": [
         "the WannaCry ransomware attack of 2017: how it brought hospitals to their knees",
-        "the ILOVEYOU virus: the Valentine's Day worm that cost $10 billion",
-        "Stuxnet: the world's first cyber weapon used against Iran's nuclear plant",
-        "the NotPetya malware attack: how it wiped out Maersk in 45 minutes",
-        "the Melissa virus of 1999: the world's first viral email worm",
-        "the Morris Worm: the first internet worm and the student who launched it",
+        "the ILOVEYOU worm of 2000: how a simple email attachment spread worldwide and what damage estimates say",
+        "Stuxnet: widely regarded as one of the first known cyber weapons, and what documented sources say about it",
+        "the NotPetya attack of 2017: what it did to Maersk and other companies, per public reports",
+        "the Melissa virus of 1999: an early, fast-spreading email virus",
+        "the Morris Worm of 1988: an early internet worm and what it taught the industry",
         "the SolarWinds hack: how hackers hid inside a software update for months",
         "WordPress malware attacks: how hackers target CMS sites and how to stop them",
         "the history of computer viruses: from 1971 Creeper to modern ransomware",
         "how phishing attacks work and why even experts fall for them",
         "SQL injection attacks: the technique behind thousands of website hacks",
-        "brute force attacks on WordPress: 90,000 attempts per minute and how to block them",
+        "brute force attacks on WordPress: how they work and how to block them",
         "the Log4Shell vulnerability: one library bug that put the internet at risk",
         "how crypto miners hijack your website server without you knowing",
-        "the anatomy of a WordPress hack: what hackers actually do once they're in",
+        "the anatomy of a WordPress hack: common stages, described defensively",
         "why free nulled WordPress plugins and themes are malware delivery vehicles",
-        "the rise of AI-generated malware and what it means for cybersecurity",
+        "the rise of AI in cyberattacks and defence: what is documented and what is speculation",
         "adware vs. spyware vs. ransomware: understanding the malware family tree",
         "how to tell if your WordPress site has been hacked (signs and solutions)",
         "the black market for stolen data: how hackers monetize website breaches"
@@ -149,27 +148,27 @@
         "a cautionary tale for business owners: what this attack cost and how it could have been prevented",
         "a before-and-after: the vulnerability, the attack, the fix",
         "myths vs. facts about viruses and cybersecurity",
-        "an expert's guide to protecting yourself – featuring Fahad's security plugins"
+        "a practical protection guide for site owners; Fahad's free security tools may be mentioned once, disclosed as his own"
       ],
-      "guidelines": "Tell the cybersecurity story with drama and accuracy. Then naturally bring in Fahad's security expertise – especially the Injection Guard plugin for WordPress and Keep Backup Daily – as practical tools readers can use right now. Position Fahad as the expert to hire for WordPress hardening and security audits. Always balance the scary story with actionable protection steps. Do not invent technical details – use well-documented facts about real incidents."
+      "guidelines": "Tell the cybersecurity story accurately using only well-documented facts, then give actionable defensive steps (updates, backups, least privilege, 2FA, reputable plugins). Fahad's Injection Guard or Keep Backup Daily may be mentioned at most once, disclosed as his own. Never include exploit code, payloads or attack instructions. No fear tactics and no guarantees of security."
     },
     "antivirus_protection": {
       "label": "Antivirus software, website security and data protection",
       "subjects": [
-        "the history of antivirus software: from John McAfee to AI-powered protection",
+        "the history of antivirus software: from early virus scanners to AI-assisted protection",
         "how antivirus engines detect viruses: signatures, heuristics and sandboxing",
-        "why WordPress websites are the #1 target for hackers (and what to do)",
-        "Wordfence vs. Sucuri vs. iThemes Security: which WordPress security plugin wins",
-        "two-factor authentication: the one thing that prevents 99% of account hacks",
+        "why WordPress sites are a frequent target and what to do about it",
+        "how to choose a WordPress security plugin: criteria to compare, with no winner declared",
+        "two-factor authentication: why it is one of the most effective account protections",
         "SSL certificates: the green padlock and why it no longer guarantees safety",
-        "how to harden a WordPress installation in 10 practical steps",
-        "the truth about free vs. paid antivirus software in 2025",
+        "how to harden a WordPress installation: practical steps",
+        "free vs. paid antivirus software in 2026: what actually differs",
         "website firewalls explained: what they do and why every site needs one",
         "backups as your last line of defence: the 3-2-1 backup rule",
         "how to set up automatic WordPress backups (and why most people get it wrong)",
         "Google Safe Browsing: what happens when your site gets blacklisted",
         "the role of WHOIS privacy and domain protection in cybersecurity",
-        "Android app security: how to spot malicious apps on the Play Store",
+        "Android app security: how to spot risky apps",
         "password managers: why using one is the single best security habit",
         "zero-day exploits explained: the vulnerabilities no one knows about yet",
         "how hackers use outdated plugins to break into WordPress sites"
@@ -177,34 +176,34 @@
       "angles": [
         "a practical guide with expert-recommended tools and steps",
         "a comparison of security approaches: free vs. premium, plugin vs. service",
-        "a story-driven piece: a business that got hacked and how they recovered",
+        "an illustrative scenario (labelled hypothetical) of a site compromise and recovery",
         "a myth-busting article on common security misconceptions",
         "a step-by-step hardening guide for WordPress beginners",
         "an expert perspective: what a developer with 20 years experience recommends"
       ],
-      "guidelines": "Position Fahad as the expert. Recommend Injection Guard and Keep Backup Daily as first steps. Mention that Fahad is available on Fiverr for security audits and WordPress hardening. Include the shop link for premium security tools. Keep technical advice accurate. Do not make guarantees about security outcomes."
+      "guidelines": "Give accurate, practical security guidance. Recommend general first steps (updates, backups, 2FA, reputable plugins); Fahad's Injection Guard or Keep Backup Daily may be mentioned once as his own tools. No guarantees about security outcomes. Do not disparage competitors. At most one link to Fahad's pages."
     },
     "software_history": {
       "label": "Software history, origin stories and technology milestones",
       "subjects": [
-        "the origin story of WordPress: how Matt Mullenweg built a blogging tool that runs 43% of the web",
-        "the birth of WooCommerce: from a simple plugin to a $30 billion acquisition",
-        "the history of PHP: from Rasmus Lerdorf's home page tools to powering half the internet",
+        "the origin story of WordPress: how a blogging tool grew into a large share of the web (include co-founder Mike Little and the b2/cafelog fork)",
+        "the birth of WooCommerce: from WooThemes to its acquisition by Automattic in 2015",
+        "the history of PHP: from Rasmus Lerdorf's personal home page tools to a web staple",
         "Python's origin story: Guido van Rossum's Christmas project that became ubiquitous",
-        "the history of Android: from a camera OS to 3 billion devices",
+        "the history of Android: from a camera OS startup to billions of devices",
         "the story of Microsoft .NET: how it reinvented how Windows apps were built",
         "the history of MySQL: the database that powered the web revolution",
-        "how Linux went from a student hobby to powering 97% of the world's servers",
+        "how Linux went from a student project to a backbone of internet infrastructure",
         "the birth of the internet browser: Mosaic, Netscape and the browser wars",
-        "the history of e-commerce: from the first online sale in 1994 to trillion-dollar markets",
+        "the history of e-commerce: from the first online sales in the 1990s to today",
         "the story of Git and GitHub: how version control changed software development",
         "the history of JavaScript: from a 10-day creation to the most used language on Earth",
-        "the origin of SEO: how PageRank changed the internet and website traffic forever",
+        "the origin of SEO: how PageRank changed the way websites get found",
         "the story of APIs: how they became the invisible glue of the modern internet",
-        "the history of cloud computing: from AWS launch to the multi-trillion dollar industry",
-        "how Django became the Python framework that powers Instagram and Pinterest",
+        "the history of cloud computing: from the launch of AWS to today",
+        "how Django became a major Python web framework (verify which well-known sites use it)",
         "the evolution of WordPress themes: from Kubrick to Gutenberg",
-        "the story of Fiverr: how a startup changed freelancing for millions worldwide",
+        "the story of Fiverr: how an online marketplace changed freelancing",
         "the history of chatbots: from ELIZA to ChatGPT",
         "IoT history: from the first internet-connected toaster to smart homes"
       ],
@@ -216,61 +215,61 @@
         "lessons entrepreneurs can learn from this technology's rise",
         "a 'little-known facts' angle that surprises even tech enthusiasts"
       ],
-      "guidelines": "Tell the history engagingly with real facts. Weave in Fahad's experience – for example, 'a developer who has been building WordPress plugins since early days' or 'as someone who has built Python and .NET applications for two decades'. Connect the history to something Fahad builds today. Do not invent dates, figures or names. Use approximate phrasing when unsure."
+      "guidelines": "Tell the history accurately using real facts; use approximate wording when unsure and list every date, figure and name in fact_check_notes. Do not use phrases like 'first' or 'biggest' unless well documented. Fahad's experience may be mentioned only as a brief, factual aside drawn from the bio. Product or link mention is optional (at most one)."
     },
     "online_business": {
       "label": "Online business stories, freelance journeys and digital entrepreneurship",
       "subjects": [
-        "how a freelance developer in Pakistan built a global client base on Fiverr",
-        "the story of WooCommerce stores that went from zero to $1M with the right plugins",
+        "how a freelance developer can build a global client base on Fiverr: practical lessons",
+        "what growing WooCommerce stores tend to get right: plugins, process and patience (no unverified revenue claims)",
         "virtual assistance: the fastest-growing remote job and how to get clients",
         "how open-source software contributions turned developers into industry names",
         "building a SaaS product as a solo developer: what actually works",
         "the business model of premium WordPress plugins: from free to paid",
         "how GitHub became a developer's resume (and how to make yours stand out)",
-        "the story of developers who built passive income through software products",
+        "how developers build income from software products: models and trade-offs",
         "dropshipping vs. digital products: which online business model really works",
-        "how niche ecommerce stores beat Amazon with the right WooCommerce setup",
-        "the Gumroad success story: empowering creators to sell digital products",
+        "how niche ecommerce stores can compete with large marketplaces",
+        "how Gumroad lets creators sell digital products: an overview",
         "how WordCamp speaking gigs changed a developer's career and visibility",
         "the journey from employee to freelancer: what no one tells you",
-        "how to price freelance development work: lessons from 20 years",
+        "how to price freelance development work: a framework from two decades of experience",
         "the business of custom WordPress development: from first client to long-term retainer",
-        "Fiverr vs. Upwork vs. direct clients: a developer's honest comparison",
+        "Fiverr vs. Upwork vs. direct clients: a factual comparison for developers",
         "how to build a portfolio that attracts long-term retainer clients",
-        "the story of Pakistan's tech freelancers becoming globally competitive",
+        "the growth of Pakistan's tech freelancers: what public sources say",
         "building an Android app from idea to Play Store: the honest timeline",
         "how to monetize your WordPress plugin on the official repository"
       ],
       "angles": [
-        "a first-person-style inspirational journey (Fahad as the protagonist or expert voice)",
+        "an inspirational journey told in Fahad's voice, using only facts from the bio (no invented anecdotes)",
         "a practical guide readers can follow: the steps, the tools, the mistakes to avoid",
         "a comparison: what works in online business vs. what people think works",
         "an expert's perspective from 20 years of building software and serving clients",
-        "a story of a real problem a business had and how a developer (Fahad) solved it",
-        "a 'how I built this' style story about a plugin, theme or app"
+        "a generalised problem-and-solution walkthrough (labelled illustrative), not a claim about a specific client",
+        "a 'how it was built' story about a plugin, theme or app, using only facts the editor supplies"
       ],
-      "guidelines": "Fahad is the expert voice or protagonist. Naturally mention Fiverr for hiring, the shop for premium tools, and GitHub for open-source credibility. Be honest, practical and inspiring without over-selling. Virtual assistance and long-term project work should be highlighted where relevant."
+      "guidelines": "Fahad is the expert voice, writing only from facts in the bio or supplied by the editor. Be honest and practical. Do not invent client stories or earnings. Mention Fiverr, the shop, or GitHub at most once, with a disclosure, and only where it genuinely helps."
     },
     "tech_tricks": {
       "label": "Technology tricks, developer tips and hidden software features",
       "subjects": [
         "10 WooCommerce tricks that most store owners never discover",
         "WordPress REST API: the hidden power that turns your site into an app",
-        "how to speed up WordPress to under 1 second (the developer's way)",
-        "Python automation tricks that save 10 hours a week",
+        "how to speed up WordPress: a developer's performance checklist",
+        "Python automation tricks that save hours every week",
         "the Git commands that make you look like a wizard to other developers",
         "how to use WordPress hooks and filters to customise anything without touching core",
         "the PHP tricks that keep WordPress code clean and maintainable",
         "JavaScript one-liners that replace 20-line functions",
         "Ajax in WordPress: how it makes websites feel like apps",
         "how to debug WordPress like a senior developer",
-        "10 hidden Android developer options that power users love",
+        "hidden Android developer options that power users find useful",
         "the SQL queries every WordPress developer should memorise",
         "how to build a WordPress plugin from scratch in an afternoon",
         "Docker for WordPress developers: the local environment you'll never want to leave",
         "API integration tricks that connect WordPress to anything",
-        "Django tips that make Python web apps 3x faster to build",
+        "Django tips that speed up building Python web apps",
         ".NET tricks that C# developers wish they'd known sooner",
         "how to use Python Playwright to automate repetitive web tasks",
         "the Chrome DevTools tricks that every web developer should use daily",
@@ -284,35 +283,35 @@
         "an expert's top picks from 20 years of actual production code",
         "a comparison: the naive way vs. the professional way"
       ],
-      "guidelines": "Show practical, working knowledge. Position Fahad as the expert sharing these tips. If a plugin, theme, or tool from Fahad's portfolio is the solution – use it. End with a CTA to hire Fahad on Fiverr for custom implementations. Do not invent code that doesn't work. Keep examples realistic and accurate."
+      "guidelines": "Show practical, working knowledge. All code must be correct, safe and defensive; no exploit code. If a tool from Fahad's portfolio is genuinely the solution, mention it once as his own. Optionally close with a single low-key pointer to Fiverr for custom work. Keep examples realistic and accurate."
     },
     "offline_business_tech": {
       "label": "How offline businesses use technology to transform",
       "subjects": [
-        "how a corner bakery in Lahore went digital and tripled sales with WooCommerce",
-        "the doctor's clinic that automated bookings and reduced no-shows by 60%",
-        "how a local tailor shop in Pakistan built a global custom clothing brand online",
-        "a restaurant's journey from handwritten orders to a full online menu and booking system",
-        "the school that went from WhatsApp fee reminders to a full WordPress student portal",
-        "how a real estate agent in Karachi became a top agent with a WordPress IDX site",
-        "the wedding planner who replaced spreadsheets with WooCommerce and doubled capacity",
-        "how a freelance accountant built a client portal using WordPress and PHP",
-        "the mechanic shop that installed IoT sensors in cars for remote diagnostics",
-        "how a printing business automated order intake with a custom WordPress plugin",
-        "the story of a Pakistani textile exporter who went global with WooCommerce",
-        "how neighbourhood pharmacies are using Android POS apps to compete with chains",
-        "a tutoring centre that scaled from 20 to 200 students using online booking software",
-        "how a NGO in Pakistan automated donor management with free WordPress plugins",
-        "the logistics startup that built its dispatch system on WordPress and APIs"
+        "illustrative scenario: how a small bakery could take orders online with WooCommerce",
+        "illustrative scenario: how a clinic could reduce missed appointments with online booking and reminders",
+        "illustrative scenario: how a local tailor shop could sell custom clothing online",
+        "illustrative scenario: from handwritten orders to an online menu and booking system for a restaurant",
+        "illustrative scenario: moving a school's fee reminders from chat messages to a WordPress student portal",
+        "illustrative scenario: how a real estate agent could build a property-listing site with WordPress",
+        "illustrative scenario: replacing spreadsheets with WooCommerce for a wedding planner",
+        "illustrative scenario: building a client portal with WordPress and PHP for a freelance accountant",
+        "how IoT sensors could support remote vehicle diagnostics for a workshop (a conceptual overview)",
+        "illustrative scenario: automating order intake for a printing business with a custom WordPress plugin",
+        "what a textile exporter should consider when selling globally with WooCommerce",
+        "how neighbourhood pharmacies can use Android POS apps (a factual overview)",
+        "illustrative scenario: how a tutoring centre could scale with online booking software",
+        "how an NGO could manage donors with free WordPress plugins (a practical overview)",
+        "how a logistics startup could build a dispatch system on WordPress and APIs (a conceptual overview)"
       ],
       "angles": [
-        "a human story: the business, the problem, the transformation",
-        "a step-by-step breakdown: the tools used and how they were configured",
-        "a 'before and after' narrative with real operational improvements",
-        "an expert's recommendation: what any similar business could do right now",
-        "an inspirational story for business owners who think tech is too complicated"
+        "an illustrative human story: the business, the problem, the approach (labelled hypothetical, no numeric results)",
+        "a step-by-step breakdown of the tools and configuration a similar business could use",
+        "an illustrative before-and-after narrative describing qualitative improvements only, no invented figures",
+        "a practical recommendation list that any similar business could use right now",
+        "an encouraging article for business owners who think technology is too complicated"
       ],
-      "guidelines": "Tell a vivid, believable story of a real-type business (fictional but plausible). Show how specific plugins or tools – ideally from Fahad's portfolio – solved the business problem. End with an invitation for similar businesses to contact Fahad on Fiverr for custom solutions. Booking Works, WooCommerce plugins, and custom PHP/Python development should feature prominently where relevant."
+      "guidelines": "These are ILLUSTRATIVE scenarios, never real clients. Open the article with the line: 'Illustrative example (not a real client).' Do not invent numbers, results, names or testimonials. Show which tools could solve each problem, using Fahad's plugins (e.g. Booking Works) only if they truly fit, mentioned once and disclosed. Optionally end with a single soft pointer to Fiverr for custom work."
     },
     "android_mobile": {
       "label": "Android apps, mobile development and mobile business stories",
@@ -321,17 +320,17 @@
         "how indie Android developers compete with big studios on the Play Store",
         "the best Android developer options hidden inside your phone",
         "how to publish your first Android app to the Play Store (the real steps)",
-        "Android security: how malicious apps pass Google review and what to do",
-        "the story of how apps changed local businesses in Pakistan and South Asia",
+        "Android security: how to spot risky apps and protect your phone",
+        "how apps have changed local businesses in Pakistan and South Asia, using public sources",
         "how Android IoT devices are used in smart homes, farms and factories",
         "the difference between a great Android app and one that gets uninstalled in 5 minutes",
         "how to monetize an Android game: ads, in-app purchases and premium apps",
         "the business of Android apps: from idea to passive income",
-        "AndroidBubbles: building a curated premium Android app collection",
+        "AndroidBubbles: how a curated Android app collection is put together (editor to supply facts)",
         "the evolution of Android: from version 1.0 to the AI-powered present",
         "how to use Python to automate tasks on an Android device",
         "why Android fragmentation is actually an opportunity for developers",
-        "the story of Pakistan's growing mobile app development industry"
+        "the story of Pakistan's growing mobile app industry, using public sources"
       ],
       "angles": [
         "a story-driven piece about mobile technology changing lives or businesses",
@@ -340,25 +339,25 @@
         "a fascinating history of the platform with surprising turns",
         "an expert's guide to choosing, rating or avoiding Android apps"
       ],
-      "guidelines": "Naturally mention AndroidBubbles (shop.androidbubbles.com) as a curated source of premium Android apps. Position Fahad as an experienced Android developer. Link to the shop and Gumroad for relevant products. Mention GitHub for open-source Android projects. Fiverr for custom Android development. Do not exaggerate app download numbers or revenue claims."
+      "guidelines": "Be accurate and practical. Mention AndroidBubbles (shop.androidbubbles.com) at most once, disclosed as Fahad's own. Do not exaggerate download numbers or revenue. Never link to modded, cracked or pirated apps. Defensive advice only on malicious apps. At most one link to Fahad's pages."
     },
     "developer_stories": {
       "label": "Open-source contributions, developer journeys and community stories",
       "subjects": [
-        "how contributing to WordPress.org changed a developer's career",
+        "how contributing to WordPress.org can help a developer's career",
         "WordCamp: the conference that united the global WordPress community",
-        "the story of a developer who went from student to WordPress.org contributor",
+        "the path from student to WordPress.org contributor: practical steps",
         "how open-source software changed the economics of web development",
         "what it means to earn a WordPress.org Contributor Badge",
         "the GitHub story: how open-source code became the world's most valuable resource",
-        "how a solo developer published 46 WordPress plugins and what it taught him",
+        "what maintaining a large portfolio of free WordPress plugins teaches a solo developer",
         "the difference between a hobbyist coder and a professional software engineer",
-        "the 10,000-hour rule in software development: what 20 years in code looks like",
-        "how speaking at WordCamp opens doors for developers worldwide",
-        "the story behind building a payment plugin: Fahad HSBC Payments for WooCommerce",
+        "what 20 years in code looks like: skills, habits and what changed",
+        "how speaking at WordCamp can open doors for developers",
+        "building a payment gateway integration for WooCommerce: lessons developers should know (no bank branding or affiliation)",
         "how Stack Overflow shaped a generation of self-taught developers",
         "the journey of learning Python from scratch and building automation tools with it",
-        "from zero to Associate Software Engineer: the certification path that matters",
+        "the path to a first software engineering role: which certifications matter",
         "how IoT projects bridge the gap between software and physical hardware"
       ],
       "angles": [
@@ -368,7 +367,15 @@
         "a community story about how the WordPress ecosystem lifts developers",
         "a how-to on earning recognition in the developer community"
       ],
-      "guidelines": "Fahad is the protagonist or primary expert voice. These articles build personal brand and authority. Include credentialed achievements: WordCamp speaker, WordPress.org Contributor Badge 2026, Best Android Developer Award. Link to Fiverr for hiring, GitHub for credibility, shop for products. Be authentic – highlight real skills and genuine contributions."
+      "guidelines": "Fahad may be the primary expert voice, but use only credentials listed in the bio and facts the editor supplies. Do not invent anecdotes, awards or career events. Be authentic and modest. Mention Fiverr, GitHub or the shop at most once, disclosed."
     }
-  }
+  },
+  "_compliance_summary": [
+    "Max one disclosed product mention and one link to own pages per article.",
+    "No invented clients, case studies, numbers, awards or testimonials; illustrative scenarios are labelled.",
+    "No exploit code, malware links or nulled/cracked software.",
+    "No bank or company branding that implies affiliation.",
+    "Draft only: human review of fact_check_notes before publishing; no auto-posting to other platforms.",
+    "Keep promotion to the author bio, About page and a Resources page, not repeated in every article."
+  ]
 }

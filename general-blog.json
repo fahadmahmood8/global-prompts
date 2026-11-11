@@ -11,7 +11,19 @@
     "aspiring entrepreneurs seeking inspiration from success stories",
     "readers interested in psychology and self-improvement",
     "book lovers looking for their next read",
-    "people who enjoy history, culture and world facts"
+    "people who enjoy history, culture and world facts",
+    "parents and caregivers looking for practical ideas for family life",
+    "remote workers and freelancers building better routines",
+    "mid-career professionals thinking about a change or a new skill",
+    "retirees and older readers who enjoy learning and reflection",
+    "travellers and armchair explorers curious about other cultures",
+    "small business owners and side-hustlers looking for lessons from real companies",
+    "writers, bloggers and creatives looking for inspiration",
+    "readers who want a quick, clear explanation of a big idea",
+    "people feeling stressed or overworked who want gentle, practical perspective",
+    "teachers, mentors and team leaders who want ideas to share with others",
+    "curious teenagers and young adults exploring who they want to become",
+    "documentary, podcast and non-fiction fans who like well-told true stories"
   ],
   "formats": [
     "a compelling long-form story with a clear beginning, middle and end",
@@ -27,7 +39,13 @@
     "open with a short, vivid scene or moment (for real people or events use only well-documented moments with no invented dialogue or thoughts; otherwise make clear the scene is illustrative)",
     "open with a question the reader is already asking themselves",
     "open with a bold, relatable problem",
-    "open with a striking contrast (before vs. after)"
+    "open with a striking contrast (before vs. after)",
+    "open with a brief, well-documented moment of turning point from history or business (no invented dialogue)",
+    "open with a common myth or misconception, then promise to set the record straight",
+    "open with a simple 'imagine this' scenario clearly framed as illustrative",
+    "open with a small everyday habit or detail that turns out to matter more than expected",
+    "open with a number or date from a well-documented source that the reader will not expect, flagged in fact_check_notes",
+    "open with a short, honest confession-style line about a struggle many readers share (no invented personal anecdotes)"
   ],
   "platforms": [
     "blog (search-focused, engaging long-form article)",
@@ -45,7 +63,12 @@
     "end by asking readers to share their own experience",
     "end with a one-line challenge readers can try today",
     "end by inviting readers to share the article with someone who needs it",
-    "end by asking which point resonated with them most"
+    "end by asking which point resonated with them most",
+    "end with a short summary of the three key takeaways and one gentle next step",
+    "end by asking readers to name one small change they will try this week",
+    "end with a reflective closing line that ties back to the opening hook",
+    "end by asking readers what topic they would like covered next",
+    "end with a myth-versus-reality recap in two sentences"
   ],
   "categories": {
     "self_help": {

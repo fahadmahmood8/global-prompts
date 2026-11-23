@@ -1,5 +1,5 @@
 {
-  "_readme": "v2 (2026-11-16). Edit on GitHub; publisher re-fetches (~5 min cache). Tokens like [[subject]] are filled by the script; keep every [[...]] token and the JSON schema in prompt_template intact. No new tokens were added, so the script works unchanged; it only needs to tolerate the new output keys (search_intent, sources, editor_todo). Goal of v2: posts that rank for what clients actually search and show real experience; the CTA lives in the author's footer snippet, so posts carry no in-body promotion. Output is DRAFT ONLY: a human reviews fact_check_notes, fills editor_todo with real first-hand details, then publishes. Do not auto-post to other platforms.",
+  "_readme": "v2 (2026-11-16). Edit on GitHub; publisher re-fetches (~5 min cache). Tokens like [[subject]] are filled by the script; keep every [[...]] token and the JSON schema in prompt_template intact. No new tokens were added, so the script works unchanged; it only needs to tolerate the new output keys (search_intent, sources, editor_todo). Goal of v2: posts that rank for what clients actually search and show real experience; the CTA lives in the author's footer snippet, so posts carry no in-body promotion. Output is DRAFT ONLY: a human reviews fact_check_notes, fills editor_todo with real first-hand details, then publishes. Do not auto-post to other platforms. v2.1 (2026-11-24): additive update only. Added new categories (ai_and_automation, pricing_psychology, hidden_cost_of_free, business_rules_and_mindset), plus new formats, hooks, closings, audiences, a platform and keyword ideas. No existing entry was changed or removed, no tokens were added, and the JSON schema is unchanged.",
   "brand": "Fahad Mahmood – WordPress Mechanic",
   "website": "https://shop.androidbubbles.com/go/",
   "system_prompt": "You are a senior editor for Fahad Mahmood's personal brand blog. Fahad Mahmood is a WordPress Mechanic and software developer with 20+ years of experience. Your job is to write accurate, genuinely useful, story-led articles that teach readers something they can act on. Fahad's expertise should show through the quality of the advice, not through promotion. Mention one of his tools only when it directly solves the problem being discussed, and say it is his own. Never invent facts, quotes, URLs, statistics, customers, case studies, awards or results. Any hypothetical scenario must be labelled as illustrative. Never include exploit code or links to malware, nulled or cracked software. Follow the requested JSON schema exactly. Your output is a draft for human review, not for automatic publication. The blog exists to earn the trust of people who might hire Fahad, so each post must target one real search a prospective client types, answer it better than a generic article, and show first-hand experience. A footer snippet on the site already carries Fahad's profiles and calls to action, so do NOT add promotional links, product plugs or hire-me lines inside the article body.",
@@ -27,7 +27,11 @@
     "service businesses (salons, clinics, tutors, consultants) that need online booking",
     "open-source contributors and WordPress.org plugin or theme authors",
     "remote workers and freelancers in South Asia looking for global clients",
-    "website owners recovering from a hack, a crash or lost data"
+    "website owners recovering from a hack, a crash or lost data",
+    "business owners, managers and bosses who want to use AI and automation but do not know where to start",
+    "entrepreneurs and aspiring founders who want to learn business, pricing and sales strategy",
+    "influencers and content creators who want to use AI without losing their own voice",
+    "learners and career-switchers who want a simple path to understand AI and automation"
   ],
   "formats": [
     "a gripping story based on publicly documented events, with a problem, conflict and resolution",
@@ -36,7 +40,12 @@
     "a 'how it happened' origin or history story with a business lesson, using only documented facts",
     "an illustrative before-and-after scenario, clearly labelled as a hypothetical example with no invented numbers",
     "a listicle of tips, each with a brief story or example",
-    "a question-led article answering what readers type into Google"
+    "a question-led article answering what readers type into Google",
+    "a lesson with a clear definition, a real-life example and a one-line takeaway for each concept",
+    "a quick quiz article: short lesson followed by 3-5 multiple-choice questions with answers and explanations",
+    "a takeaway card style post: one idea, one example, one action the reader can do today",
+    "a short illustrative parable (clearly labelled as fiction) that ends with a one-line moral",
+    "a real company case study using only publicly documented facts, with sources the editor verifies"
   ],
   "hooks": [
     "open with a documented cybersecurity incident, stated accurately and without sensationalism",
@@ -45,7 +54,11 @@
     "open with a relatable frustration that your target reader feels every day",
     "open with a lesson from a publicly documented technology success, or a clearly labelled hypothetical",
     "open with a provocative question that makes the reader doubt what they know",
-    "open with a short scene from a publicly documented cyberattack, using only verified facts"
+    "open with a short scene from a publicly documented cyberattack, using only verified facts",
+    "open with a short, correctly attributed quote that frames the lesson (the editor verifies the attribution)",
+    "open with a 'study X' rule, such as 'to be successful, study success', then apply it to the topic",
+    "open with a clearly labelled short parable about a small leak, a free favor or a skipped lesson",
+    "open with a simple question such as 'what is automation in real life?' and answer it with an everyday example"
   ],
   "platforms": [
     "blog (SEO-focused, long-form article that ranks on Google)",
@@ -54,14 +67,17 @@
     "Medium (thoughtful technical or business essay; draft for manual posting)",
     "Twitter/X (punchy thread with a strong opener)",
     "Instagram (visual story with key takeaway captions)",
-    "Quora (expert answer to a real question; draft only, no promotional links, post manually)"
+    "Quora (expert answer to a real question; draft only, no promotional links, post manually)",
+    "knowledgebase page (lessons, MCQs and takeaway cards in simple HTML; draft for manual publishing)"
   ],
   "closings": [
     "end with a question asking readers what security or plugin challenge they face",
     "end with a one-line challenge readers can try on their website today",
     "end by asking readers to share the article with someone who would find it useful",
     "end with a short summary of next steps the reader can take, with no promotional link",
-    "optionally end with ONE disclosed, low-key pointer to Fahad's free plugin, GitHub, Fiverr or shop, only if directly relevant"
+    "optionally end with ONE disclosed, low-key pointer to Fahad's free plugin, GitHub, Fiverr or shop, only if directly relevant",
+    "end with a quick self-check of 3 questions the reader can answer today",
+    "end with one small action to try this week, such as listing five repeated tasks or counting one free thing you give away"
   ],
   "categories": {
     "wordpress_plugins": {
@@ -415,6 +431,98 @@
         "a plain-language explainer of a 2026 change (WordPress 7.0, HPOS, AI connectors) and what it means for a business site"
       ],
       "guidelines": "Write for someone who has this problem today. Answer the search in the first 2-3 sentences, then give the full diagnostic or how-to. Use official documentation and reputable security or WooCommerce sources; cite them. Include one short section 'When it is worth bringing in a developer' with neutral signs, no pitch, no contact details, no promotional link. Put [EDITOR: add a real example from your own work here] wherever first-hand experience would add credibility, and list each in editor_todo. Defensive security advice only; no exploit code or attack steps. Do not quote prices, percentages or traffic/revenue results unless sourced; label any scenario illustrative."
+    },
+    "ai_and_automation": {
+      "label": "Learning AI and automation for business: concepts, skills and real-life use",
+      "subjects": [
+        "why learning AI is a business skill, not a tech hobby: what it means for owners, bosses, entrepreneurs and creators",
+        "what 'learning AI' actually means: using it, applying it to your work, and building with it",
+        "what automation means in real life: from alarms and standing orders to order-to-invoice workflows",
+        "what to learn for automation: process mapping, spreadsheets and data, triggers and actions, no-code tools, APIs, prompting and basic code",
+        "how to automate one repeated business task this week, with a human check at the end",
+        "AI for business owners: quotes, replies, summaries and spotting leaks, with human review",
+        "AI for managers: meeting notes, reports and onboarding guides without losing the human touch",
+        "AI for entrepreneurs: validating an idea, building a first version and learning from feedback",
+        "AI for creators: using AI for speed while keeping your own voice and following disclosure rules",
+        "AI hallucinations explained: why confident answers can be wrong and how to verify them",
+        "human-in-the-loop automation: where a person should always review before anything goes out",
+        "automating WooCommerce and WordPress routines: orders, exports, reminders and reports",
+        "a 30-day plan to learn AI and automation from zero",
+        "key AI and automation concepts for non-technical people: prompt, token, agent, API, webhook, RAG explained simply"
+      ],
+      "angles": [
+        "a beginner-friendly lesson with clear definitions and one real-life example per concept",
+        "a practical walkthrough readers can try today, with the steps, the tools and the mistakes to avoid",
+        "a 'study it, don't leave it to chance' motivational lesson that ends with a concrete first step",
+        "a myth-vs-fact piece on what AI can and cannot do for a business",
+        "a role-based guide (owner, manager, entrepreneur, creator) showing what each should learn first",
+        "an expert's perspective from 20 years of building software, with the editor supplying real first-hand details",
+        "a generalised problem-and-solution workflow (labelled illustrative), not a claim about a specific client"
+      ],
+      "guidelines": "Fahad is the expert voice, writing only from facts in the bio or supplied by the editor. Be honest and practical. Real company examples must be publicly documented and listed in sources; the editor verifies every date, price and claim before publishing. Quotes must be short, correctly attributed (say 'attributed to' when unsure) and verified. Stories and scenarios that are not documented must be labelled illustrative. Do not invent clients, earnings, statistics or results. Keep AI advice practical and honest: never promise outcomes, never claim AI replaces professional judgment, and remind readers to protect customer data."
+    },
+    "pricing_psychology": {
+      "label": "Pricing psychology, negotiation and sales strategy",
+      "subjects": [
+        "round numbers are negotiated, exact numbers are paid: what precise anchoring is and how it works",
+        "what a 99 ending signals to customers and when charm pricing helps or hurts",
+        "round vs exact vs charm vs prestige prices: what each figure says to a buyer",
+        "where bargaining and discount requests tend to happen and why round numbers invite counters",
+        "how to quote custom work: why an exact figure can feel more credible than a round one",
+        "anchoring, decoy pricing, good-better-best tiers and bundling explained with real examples",
+        "was/now pricing: how to use it honestly and why a real previous price matters",
+        "how to price freelance and plugin work without racing to the bottom",
+        "pricing a WooCommerce discount or clearance sale without training customers to wait"
+      ],
+      "angles": [
+        "a practical explainer of each price figure: what you choose and how customers tend to respond",
+        "a myth-vs-fact article on common pricing beliefs, noting these are tendencies and not laws",
+        "a comparison of two pricing styles with an illustrative before-and-after scenario",
+        "a short lesson plus a quick self-test where readers try different price endings",
+        "an expert's perspective from two decades of quoting and pricing software work"
+      ],
+      "guidelines": "Fahad is the expert voice, writing only from facts in the bio or supplied by the editor. Be honest and practical. Real company examples must be publicly documented and listed in sources; the editor verifies every date, price and claim before publishing. Quotes must be short, correctly attributed (say 'attributed to' when unsure) and verified. Stories and scenarios that are not documented must be labelled illustrative. Do not invent clients, earnings, statistics or results. Present pricing psychology as tendencies that vary by market, culture and product; do not quote studies or percentages unless the editor has opened and verified the source."
+    },
+    "hidden_cost_of_free": {
+      "label": "Small leaks sink ships: the hidden cost of free and uncounted work",
+      "subjects": [
+        "small leaks sink big ships: how free favors, revisions and support quietly drain a business",
+        "free is never zero: counting the time, money, opportunity and energy you give away",
+        "how to run a free-cost audit: list it, count it, decide it, fix it",
+        "free shipping, free revisions, free consultations: when free is marketing and when it is a leak",
+        "how to cap free work: included revisions, minimum orders and clear scope",
+        "lessons from documented company decisions about free offers, such as unlimited plans, free baggage, free shipping and password sharing",
+        "why a loss leader works only when you know exactly what it costs",
+        "free plugin support and open-source work: how to stay generous without burning out"
+      ],
+      "angles": [
+        "a lesson with a clear framework, a real documented company example and one short illustrative story",
+        "a practical guide with a simple calculator-style worksheet the reader can do on paper",
+        "a story-led article using a documented public example, checked and sourced by the editor",
+        "an illustrative parable clearly labelled as fictional, ending with a one-line moral",
+        "an expert's perspective on saying yes on purpose and saying no with a plan"
+      ],
+      "guidelines": "Fahad is the expert voice, writing only from facts in the bio or supplied by the editor. Be honest and practical. Real company examples must be publicly documented and listed in sources; the editor verifies every date, price and claim before publishing. Quotes must be short, correctly attributed (say 'attributed to' when unsure) and verified. Stories and scenarios that are not documented must be labelled illustrative. Do not invent clients, earnings, statistics or results. Documented examples such as MoviePass, Southwest Airlines baggage policy, Amazon Prime pricing, Netflix password sharing or Costco's rotisserie chicken must be re-verified against current sources before use."
+    },
+    "business_rules_and_mindset": {
+      "label": "Business rules, mindset and the habit of studying success",
+      "subjects": [
+        "there are only two ways to do business: the same quality for less, or better quality for the same price",
+        "if you wish to be successful, study success: why deliberate study beats leaving things to chance",
+        "why understanding the code still matters when AI writes it: how to stay in the driver's seat",
+        "what happens when you skip learning now: getting stuck with AI later",
+        "investing in the right skill at the right time: a simple way to weigh your learning choices",
+        "the businessman, the boss, the entrepreneur and the influencer: what each should study first",
+        "turning a rule of thumb into a business habit: writing your own business rules"
+      ],
+      "angles": [
+        "a short motivational lesson built on one clear rule, with a practical next step",
+        "a weighing-scale style comparison: the cost of learning now vs the cost of not learning",
+        "a short illustrative parable with a moral, clearly labelled as fiction",
+        "an expert's perspective from 20 years in software, with the editor supplying real first-hand details",
+        "a quote-led reflection using a short, correctly attributed quote verified by the editor"
+      ],
+      "guidelines": "Fahad is the expert voice, writing only from facts in the bio or supplied by the editor. Be honest and practical. Real company examples must be publicly documented and listed in sources; the editor verifies every date, price and claim before publishing. Quotes must be short, correctly attributed (say 'attributed to' when unsure) and verified. Stories and scenarios that are not documented must be labelled illustrative. Do not invent clients, earnings, statistics or results. Keep the tone encouraging and practical. Do not promise success or income."
     }
   },
   "_compliance_summary": [
@@ -426,7 +534,7 @@
     "No bank or company branding that implies affiliation.",
     "Draft only: human review before publishing; no auto-posting to other platforms; publish one carefully edited post rather than bulk output."
   ],
-  "version": "2.0",
+  "version": "2.1",
   "last_reviewed": "2026-11-16",
   "credentials_verified_on": "",
   "market_signals": {
@@ -473,7 +581,17 @@
     "connect claude to wordpress mcp",
     "wordpress booking plugin for clinic",
     "wordpress maintenance checklist",
-    "shopify to woocommerce migration"
+    "shopify to woocommerce migration",
+    "how to automate small business tasks with ai",
+    "what is automation in business examples",
+    "how to learn ai for business",
+    "ai tools for freelancers and agencies",
+    "automate woocommerce orders and reports",
+    "psychological pricing examples",
+    "how to price a service or project",
+    "round vs exact price negotiation",
+    "hidden cost of free shipping small business",
+    "how to stop giving free work as a freelancer"
   ],
   "buyer_intent_keyword_note": "Ideas only, no volume claims. Validate in Google Search Console / a keyword tool and keep the ones where you can add real experience.",
   "used_subjects": []

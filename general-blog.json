@@ -1,5 +1,5 @@
 {
-  "_readme": "v2 (2026-11-16). Edit on GitHub; the script re-fetches it (~5 min cache). Tokens like [[subject]] are filled by the script; keep every [[...]] token and the JSON schema in prompt_template intact. No new tokens were added, so the script works unchanged; it only needs to tolerate two new output keys (sources, editor_todo). 'brand' and 'website' are neutral placeholders: this file serves several blogs, so never hardcode a blog name or URL here (the script may override them per blog). Author = whoever is logged in on the target blog; the model must not name an author or invent a persona. Policy rules for WordPress.com user guidelines are built into system_prompt, prompt_template and each category's guidelines; keep them when editing.",
+  "_readme": "v2 (2026-11-16). Edit on GitHub; the script re-fetches it (~5 min cache). Tokens like [[subject]] are filled by the script; keep every [[...]] token and the JSON schema in prompt_template intact. No new tokens were added, so the script works unchanged; it only needs to tolerate two new output keys (sources, editor_todo). 'brand' and 'website' are neutral placeholders: this file serves several blogs, so never hardcode a blog name or URL here (the script may override them per blog). Author = whoever is logged in on the target blog; the model must not name an author or invent a persona. Policy rules for WordPress.com user guidelines are built into system_prompt, prompt_template and each category's guidelines; keep them when editing. v2.1 (2026-11-24): additive update only. Added 16 new categories (AI and automation, pricing psychology, hidden cost of free, entrepreneurship, marketing, leadership, creators and social media, behavioral economics, study skills, online safety, design, sustainability, everyday mathematics, geography, future of work, proverbs), appended subjects and angles to six existing categories, and added audiences, formats, hooks, closings and platforms. Nothing was removed or changed, no tokens were added, the schema is unchanged, and every new category carries the same WordPress.com policy guidelines; this file stays neutral and brand-free.",
   "brand": "our blog",
   "website": "Not supplied; do not invent one",
   "system_prompt": "You are an expert editor and storyteller who writes accurate, engaging articles. Follow the requested JSON schema exactly. Never invent facts, quotes, URLs or statistics; flag anything uncertain. Follow the WordPress.com User Guidelines: no illegal, defamatory, threatening, sexually explicit, malicious, impersonating or private-information content; no copyright or trademark infringement; no spam, hidden affiliate or promotional content. When unsure, leave it out and flag it in fact_check_notes. This script publishes to several different blogs, so every article must be original in structure, opening, examples and wording, and must never depend on a specific blog name, website, author or persona. The author is whoever is logged in on the publishing site: never name an author, write a byline or bio, claim credentials or personal experience, or invent personal anecdotes. Use a neutral editorial voice (second person and plain narration).",
@@ -37,7 +37,15 @@
     "students preparing for exams who need clear explanations",
     "busy readers who have five minutes and want a clear answer",
     "readers from diverse cultures and backgrounds who enjoy learning about the wider world",
-    "parents looking for ways to explain big ideas to children"
+    "parents looking for ways to explain big ideas to children",
+    "small business owners who want practical ideas without jargon",
+    "freelancers and remote workers building their careers",
+    "managers and team leaders who want to work smarter",
+    "content creators and aspiring influencers",
+    "people curious about AI who have no technical background",
+    "shoppers who want to understand how prices and discounts work",
+    "learners who like short quizzes, takeaways and checklists",
+    "teachers and trainers looking for clear lesson ideas"
   ],
   "formats": [
     "a compelling long-form story with a clear beginning, middle and end",
@@ -58,7 +66,13 @@
     "a mini case study of a documented event, idea or organisation, using only public facts",
     "a 'what if' thought experiment, clearly labelled hypothetical",
     "a beginner's guide that ends with a few self-reflection prompts",
-    "a 'day in the life' style walkthrough of an everyday situation, clearly labelled illustrative, with no real people"
+    "a 'day in the life' style walkthrough of an everyday situation, clearly labelled illustrative, with no real people",
+    "a lesson with a clear definition, a real-life example and a one-line takeaway for each concept",
+    "a short article followed by 3-5 original multiple-choice questions with answers and explanations",
+    "a takeaway card style post: one idea, one example, one action the reader can do today",
+    "a glossary-style explainer of 8-10 key terms, each in one or two plain sentences",
+    "a short original parable, clearly labelled as fiction, ending with a one-line moral",
+    "a 30-day learning or habit plan broken into four weeks"
   ],
   "hooks": [
     "open with a surprising fact or counter-intuitive statement",
@@ -79,7 +93,12 @@
     "open with a 'small mistake, big consequence' moment (documented, or clearly labelled illustrative)",
     "open with a short definition twist: it is not what you think",
     "open with a contrast over time (then vs now), using only well-documented facts",
-    "open with a vivid everyday detail, clearly framed as illustrative where it is not a documented fact"
+    "open with a vivid everyday detail, clearly framed as illustrative where it is not a documented fact",
+    "open with a well-known proverb or saying, stating its origin only if well documented, then show why it still applies",
+    "open with a 'study this to get that' rule and apply it to the topic",
+    "open with a simple question such as 'what does this really mean in real life?' and answer it with an everyday example",
+    "open with a tiny everyday leak (a free favor, a forgotten subscription), clearly framed as illustrative",
+    "open with a contrast between two ways of doing the same thing, using only well-documented facts or a clearly labelled hypothetical"
   ],
   "platforms": [
     "blog (search-focused, engaging long-form article)",
@@ -92,7 +111,9 @@
     "YouTube Shorts / Reels (60-second script idea)",
     "Quora (direct, helpful answer to a specific question)",
     "newsletter (email-style issue; draft for manual sending)",
-    "Threads (short, conversational post; no links)"
+    "Threads (short, conversational post; no links)",
+    "knowledge page (lessons, quizzes and takeaway cards; draft for manual publishing)",
+    "WhatsApp channel or status text (short, no links)"
   ],
   "closings": [
     "end with a thought-provoking question inviting readers to comment",
@@ -110,7 +131,11 @@
     "end with a 'one thing to remember' line followed by a question",
     "end by inviting readers to explore one related idea further (no link)",
     "end with a gentle, encouraging line that fits the topic",
-    "end by inviting readers to share a related tip or story in the comments"
+    "end by inviting readers to share a related tip or story in the comments",
+    "end with a quick self-check of three questions the reader can answer today",
+    "end with one small action to try this week",
+    "end by asking readers what they give away for free without counting it (no link)",
+    "end with a one-line takeaway readers can remember"
   ],
   "categories": {
     "self_help": {
@@ -141,7 +166,9 @@
         "how to get out of a rut",
         "how to develop patience",
         "how to become financially disciplined",
-        "how to learn any skill faster"
+        "how to learn any skill faster",
+        "why studying success beats waiting for luck",
+        "how to learn from people who are already where you want to be"
       ],
       "angles": [
         "a step-by-step plan readers can start today",
@@ -747,7 +774,10 @@
         "what a supply chain is",
         "how advertising shapes what we buy",
         "why saving feels hard and how habits help",
-        "how to talk about money with family"
+        "how to talk about money with family",
+        "how percentage discounts really add up",
+        "the cost of small recurring expenses over a year",
+        "why free offers are never really free"
       ],
       "angles": [
         "a beginner-friendly explainer with a worked example using round, clearly illustrative numbers",
@@ -849,7 +879,10 @@
         "how smartphones changed everyday life (documented trends)",
         "responsible use of AI tools for study and work",
         "how a website goes from a domain name to your screen",
-        "what happens when you press 'send' on a message"
+        "what happens when you press 'send' on a message",
+        "what automation is and where you already use it",
+        "how an API lets two apps talk to each other",
+        "how AI chatbots work, in plain language"
       ],
       "angles": [
         "a beginner-friendly explainer with an everyday analogy",
@@ -1121,7 +1154,11 @@
         "soft skills employers keep asking for",
         "how to build a learning habit",
         "how to prepare for exams calmly",
-        "how to make a good first week at a new job"
+        "how to make a good first week at a new job",
+        "how to learn AI tools for everyday work",
+        "how to automate repetitive tasks at work",
+        "which skills stay valuable as technology changes",
+        "how to build a simple portfolio that shows what you can do"
       ],
       "angles": [
         "a step-by-step plan readers can start today",
@@ -1223,7 +1260,10 @@
         "how to validate a small business idea cheaply",
         "lessons small businesses can learn from famous failures (documented only)",
         "how a bank loan differs from investment (general terms)",
-        "how cooperatives and community businesses work"
+        "how cooperatives and community businesses work",
+        "the two ways to compete: the same quality for less, or better quality for the same price",
+        "why precise prices feel more credible than round ones",
+        "how small businesses find and fix their hidden costs"
       ],
       "angles": [
         "a plain-language explainer with a simple illustrative example",
@@ -1257,7 +1297,10 @@
         "a story about a lost-and-found object and what it taught",
         "a tale about the value of time",
         "a story about humility",
-        "a story about a family tradition passed on"
+        "a story about a family tradition passed on",
+        "an original parable about a small leak in a ship",
+        "an original story about an apprentice who let the machine do all the work and then got stuck",
+        "an original fable about a shopkeeper who counted everything he gave away"
       ],
       "angles": [
         "a short original fable with animals and a clear moral",
@@ -1267,8 +1310,443 @@
         "a story with a short 'what this teaches us' section"
       ],
       "guidelines": "Write ORIGINAL fiction only, clearly labelled as fiction or a parable at the top. Use invented characters only: no real people, companies, brands or places presented as real events, and do not retell or imitate copyrighted stories, characters or specific published tales. Keep content suitable for all ages, free of violence, hate or sexual content, and avoid stereotypes. Put the lesson in the story rather than preaching. fact_check_notes should state that the piece is fiction and list any real-world facts it touches. No product promotion, affiliate-style recommendations or external links. "
+    },
+    "ai_and_automation_explained": {
+      "label": "Artificial intelligence and automation explained for everyone",
+      "subjects": [
+        "what artificial intelligence really is, and what it is not",
+        "how machine learning learns from examples",
+        "what a large language model is, in plain language",
+        "what a prompt is and why clear wording gets better answers",
+        "why AI sometimes states false things confidently (hallucinations)",
+        "what an AI agent is and how it differs from a chatbot",
+        "what automation means in everyday life, from alarms to standing orders",
+        "automation examples at home and in a small business",
+        "triggers and actions: the simple logic behind every automation",
+        "human-in-the-loop: why people should review automated work",
+        "what APIs and webhooks are, explained with an everyday analogy",
+        "no-code, low-code and code: what each one means",
+        "what to learn first if you want to automate repetitive tasks",
+        "why understanding code still matters when AI can write it",
+        "how to learn AI step by step as a complete beginner",
+        "how AI changes tasks at work, and what public reports say about jobs",
+        "AI and privacy: what not to paste into a chatbot",
+        "bias in AI explained simply",
+        "how recommendation systems decide what you see",
+        "the difference between AI, machine learning and deep learning"
+      ],
+      "angles": [
+        "a plain-language explainer with one everyday example per concept",
+        "a beginner's guide that ends with a few self-reflection prompts",
+        "myths versus facts about what AI can and cannot do",
+        "a step-by-step plan readers can start today",
+        "a short lesson followed by a quick original quiz with answers",
+        "a comparison of two ideas with an honest verdict",
+        "a glossary-style explainer of the key terms"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Describe AI capabilities and limits honestly and cautiously; do not predict the future with certainty, do not claim AI replaces professional judgment, and remind readers to verify important AI output and protect personal data. Name AI products or companies only when needed and only factually; do not rank or recommend tools.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "pricing_psychology_and_sales": {
+      "label": "Pricing psychology, negotiation and sales ideas",
+      "subjects": [
+        "round numbers are negotiated, exact numbers are paid: what precise anchoring means",
+        "the left-digit effect and why prices so often end in 9",
+        "charm pricing versus prestige pricing: what each figure signals",
+        "anchoring in everyday shopping: how the first number frames the rest",
+        "decoy pricing and why a middle option attracts buyers",
+        "good, better, best: how three-tier pricing guides choices",
+        "bundling: why a package can feel like a bargain",
+        "was and now pricing: how it works and why honesty matters",
+        "why discounts cluster around round percentages",
+        "haggling cultures around the world",
+        "the psychology of the word free",
+        "loss leaders explained: selling one thing to sell another",
+        "why a higher price can signal higher quality",
+        "subscription pricing: why monthly plans feel easier",
+        "hidden fees and drip pricing: why transparent prices build trust",
+        "how to prepare for a negotiation: first offers and walk-away points"
+      ],
+      "angles": [
+        "a plain-language explainer with a simple illustrative example",
+        "myths versus facts about pricing, noting that these are tendencies and not laws",
+        "a comparison of two pricing styles with an honest verdict",
+        "lessons from documented real cases",
+        "a short lesson with a quick self-test",
+        "a 'five things most people get wrong' correction, each with a better approach"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. Present pricing psychology as tendencies that vary by culture, market and product. Do not quote studies, percentages or sales results unless you are certain they are real and list them in fact_check_notes. Never encourage deceptive pricing. No product promotion, affiliate-style recommendations or external links."
+    },
+    "hidden_cost_of_free_and_small_leaks": {
+      "label": "The hidden cost of free and the small leaks that sink ships",
+      "subjects": [
+        "small leaks sink big ships: the proverb and what it teaches about little expenses",
+        "free is never zero: the cost in time, money, opportunity and energy",
+        "the saying 'there is no such thing as a free lunch' and where it comes from",
+        "how to run a simple audit of the things you give away",
+        "opportunity cost explained with everyday examples",
+        "the sunk cost fallacy: why we keep paying for what is not working",
+        "scope creep: how small extras quietly grow into big problems",
+        "subscription creep: the small recurring charges people forget",
+        "free trials and freemium: how the models work and who pays in the end",
+        "unlimited plans: why some promises turned out to be too costly",
+        "free shipping: who really pays and how businesses plan for it",
+        "loss leaders: when giving something away is a deliberate, counted choice",
+        "the cost of saying yes to everything",
+        "small daily habits that quietly drain time and money",
+        "open source and free software: the hidden work behind the price tag",
+        "how to be generous on purpose instead of by accident"
+      ],
+      "angles": [
+        "a plain-language lesson with a clear framework and one example",
+        "lessons from documented real cases",
+        "a practical guide readers can try on paper today",
+        "an original short parable with a clear moral, labelled as fiction",
+        "a 'five things most people get wrong' correction, each with a better approach",
+        "myths versus reality"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. Use a quotation only when you are highly confident it is real, short and correctly attributed; otherwise paraphrase. A proverb or saying may be attributed to a person only if the attribution is well documented; otherwise say it is commonly attributed. Documented company examples (for instance unlimited-plan, free-shipping or password-sharing decisions) must be described neutrally and kept to publicly reported facts. Do not invent cost figures. No product promotion, affiliate-style recommendations or external links."
+    },
+    "entrepreneurship_and_startups": {
+      "label": "Entrepreneurship, startups and building something of your own",
+      "subjects": [
+        "what a minimum viable product is and why it matters",
+        "how founders test an idea before building it",
+        "unit economics explained with a simple example",
+        "bootstrapping versus raising money: the trade-offs",
+        "commonly cited reasons startups fail",
+        "famous pivots: companies that changed direction",
+        "solo founders and tiny teams: what they have to get right",
+        "how to find a problem worth solving",
+        "how to run useful customer interviews",
+        "how to price a first product",
+        "the role of luck, timing and preparation in success",
+        "from side project to business: the usual stages",
+        "business models explained: subscription, marketplace, freemium and one-time sales",
+        "franchising basics",
+        "why the same two paths keep winning: better, or cheaper"
+      ],
+      "angles": [
+        "a plain-language explainer with a simple illustrative example",
+        "lessons from documented real cases",
+        "the common mistakes people make and how to fix them",
+        "a step-by-step plan readers can start today",
+        "myths versus facts about entrepreneurship",
+        "a story-driven guide with a clear takeaway at each step"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. No 'get rich' claims or promised earnings. Origin stories are often simplified; say so where they are disputed or mythologised. No product promotion, affiliate-style recommendations or external links."
+    },
+    "marketing_and_branding": {
+      "label": "Marketing, branding and how businesses win attention",
+      "subjects": [
+        "what a brand is beyond a logo",
+        "how storytelling helps people remember a message",
+        "the marketing funnel explained simply",
+        "why word of mouth still matters",
+        "content marketing basics: helping before selling",
+        "positioning: how businesses choose what to be known for",
+        "social proof and why people trust other people's choices",
+        "why consistency builds a brand",
+        "how businesses choose their names",
+        "famous rebrands and what they teach",
+        "email marketing basics and why permission matters",
+        "how search engines connect readers with answers, explained simply",
+        "honest marketing versus misleading marketing",
+        "the story behind some well-known slogans, using documented facts only"
+      ],
+      "angles": [
+        "a plain-language explainer with a simple illustrative example",
+        "lessons from documented real cases",
+        "myths versus facts about marketing",
+        "a comparison of two approaches with an honest verdict",
+        "a short lesson with a quick self-test"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. When discussing slogans or ad campaigns, describe them factually, keep any quotation very short, and never present a slogan as the blog's own. Do not invent campaign results or figures. No product promotion, affiliate-style recommendations or external links."
+    },
+    "leadership_and_management": {
+      "label": "Leadership, management and working with people",
+      "subjects": [
+        "what makes a good boss, according to widely documented management ideas",
+        "how to delegate without losing control",
+        "how to run a short, useful meeting",
+        "how to give feedback people can act on",
+        "building simple systems so a team does not depend on one person",
+        "managing a remote or hybrid team",
+        "how leaders make decisions under uncertainty",
+        "emotional intelligence at work",
+        "hiring basics: what to look for and what to avoid",
+        "what company culture really means",
+        "how to handle conflict in a team",
+        "goal-setting frameworks explained simply",
+        "using tools and automation without losing the human touch",
+        "one-to-one meetings: why they matter"
+      ],
+      "angles": [
+        "a step-by-step plan readers can start today",
+        "the common mistakes people make and how to fix them",
+        "myths versus reality",
+        "a comparison of two popular methods with an honest verdict",
+        "a plain-language explainer with a simple illustrative example"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. Do not give legal or HR-compliance advice; mention that rules differ by country and workplace. No product promotion, affiliate-style recommendations or external links."
+    },
+    "creator_economy_and_social_media": {
+      "label": "Creators, influencers and the social media world",
+      "subjects": [
+        "how creators earn money: the documented business models",
+        "how to build an audience slowly and honestly",
+        "authenticity versus algorithms",
+        "repurposing one idea into many formats",
+        "personal branding basics",
+        "how different platforms reward different content",
+        "why disclosing sponsorships matters",
+        "creator burnout and sustainable routines",
+        "copyright basics every creator should know",
+        "how recommendation algorithms work, in plain language",
+        "why short videos hold attention",
+        "building a community instead of chasing followers",
+        "using AI tools while keeping your own voice",
+        "reading analytics without being ruled by them",
+        "a short history of blogging, podcasts and online video"
+      ],
+      "angles": [
+        "a plain-language explainer with a simple illustrative example",
+        "the common mistakes people make and how to fix them",
+        "myths versus reality",
+        "a step-by-step plan readers can start today",
+        "a short history with a clear takeaway"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. Do not promise followers, income or viral results. Keep copyright and advertising-disclosure content general and mention that rules differ by country. No product promotion, affiliate-style recommendations or external links."
+    },
+    "behavioral_economics_and_decision_making": {
+      "label": "How people really make decisions: behavioral economics in plain language",
+      "subjects": [
+        "loss aversion: why losing feels worse than winning feels good",
+        "anchoring: how the first number shapes judgment",
+        "framing: why the same facts can lead to different choices",
+        "the sunk cost fallacy in everyday life",
+        "choice overload: why too many options can freeze us",
+        "the default effect: why most people keep the pre-selected option",
+        "confirmation bias and how to check your own thinking",
+        "nudges: small changes that guide behavior",
+        "the planning fallacy: why projects take longer than expected",
+        "present bias: why we favor now over later",
+        "herd behavior and social proof",
+        "overconfidence and how to calibrate it",
+        "mental accounting: why we treat money differently by label",
+        "scarcity and urgency: how they shape choices and how to resist pressure"
+      ],
+      "angles": [
+        "what psychology research says, explained simply",
+        "myths versus reality",
+        "a plain-language explainer with a simple illustrative example",
+        "the common mistakes people make and how to fix them",
+        "a short lesson with a quick self-test"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Describe findings cautiously: some well-known results have been debated or only partly replicated, and effects vary by person and context. Name researchers or studies only if you are certain and list them in fact_check_notes.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "study_skills_and_lifelong_learning": {
+      "label": "Study skills and the habit of lifelong learning",
+      "subjects": [
+        "if you want to succeed at something, study it: why deliberate learning beats waiting for luck",
+        "spaced repetition and active recall explained",
+        "how to build a daily learning routine",
+        "how to take notes you will actually use",
+        "learning from mistakes without self-blame",
+        "why teaching something is one of the best ways to learn it",
+        "how to read a non-fiction book and remember it",
+        "learning to code as an adult",
+        "how to build a personal knowledge base",
+        "how to use AI as a study helper responsibly",
+        "how to build a 30-day learning plan",
+        "focus versus multitasking",
+        "how to practice with quizzes and self-tests",
+        "growth mindset: what the idea says and what critics point out",
+        "how to learn a new field when you are starting from zero"
+      ],
+      "angles": [
+        "a step-by-step plan readers can start today",
+        "a 7-day or 30-day challenge structure",
+        "what psychology research says, explained simply",
+        "the common mistakes people make and how to fix them",
+        "a short lesson followed by a quick original quiz with answers"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Describe learning techniques as widely discussed methods that work differently for different people.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "online_safety_and_digital_life": {
+      "label": "Online safety, privacy and living well with technology",
+      "subjects": [
+        "how to create strong passwords and why a password manager helps",
+        "phishing explained: how to spot a fake message",
+        "two-factor authentication in plain language",
+        "the risks of public Wi-Fi and how to reduce them",
+        "why backups matter and a simple backup routine",
+        "how to check whether a news story is reliable",
+        "your digital footprint and how to shrink it",
+        "privacy settings worth checking on social media",
+        "keeping children safe online: general guidance for families",
+        "AI-generated scams and fake content: warning signs",
+        "why software updates matter",
+        "basic website security habits for small site owners, defensive advice only",
+        "digital minimalism and healthy screen habits"
+      ],
+      "angles": [
+        "a step-by-step plan readers can start today",
+        "the common mistakes people make and how to fix them",
+        "myths versus reality",
+        "a plain-language explainer with a simple illustrative example",
+        "a short checklist readers can finish in ten minutes"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Give defensive, safety-first advice only: no hacking instructions, no exploit details, no links to malware, and nothing that helps someone attack a system or person. Never ask readers to share passwords or personal data.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "design_and_creativity": {
+      "label": "Design, creativity and the art of making things better",
+      "subjects": [
+        "what makes a design good: clarity, balance and purpose",
+        "why simple designs often win",
+        "typography basics for non-designers",
+        "color and mood: what is known and what is debated",
+        "design thinking explained",
+        "everyday objects with brilliant design",
+        "how to overcome creative block",
+        "layout and whitespace: why empty space matters",
+        "composition rules in photography",
+        "how good infographics explain complex ideas",
+        "minimalism: a design idea and a lifestyle",
+        "habits of highly creative people, using documented examples"
+      ],
+      "angles": [
+        "a plain-language explainer with a simple illustrative example",
+        "myths versus reality",
+        "lessons from documented real cases",
+        "a step-by-step plan readers can start today",
+        "the common mistakes people make and how to fix them"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. For real companies and people use only publicly documented facts and neutral wording, and use brand names factually only. Describe designs and designers only through well-documented public facts, never reproduce copyrighted images or text, and treat claims about color psychology as contested where they are.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "sustainability_and_everyday_environment": {
+      "label": "Sustainability and everyday environmental choices",
+      "subjects": [
+        "how to reduce food waste at home",
+        "simple ways to save energy at home",
+        "recycling myths and facts",
+        "fast fashion explained",
+        "renewable energy basics",
+        "water conservation habits that add up",
+        "what sustainable travel can look like",
+        "the circular economy explained",
+        "starting a small urban garden",
+        "alternatives to single-use plastic and their trade-offs",
+        "what a carbon footprint is and how it is estimated",
+        "why biodiversity matters"
+      ],
+      "angles": [
+        "a step-by-step plan readers can start today",
+        "myths versus reality",
+        "what science says, explained simply",
+        "the common mistakes people make and how to fix them",
+        "a 7-day or 30-day challenge structure"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Describe environmental science according to mainstream scientific consensus, use approximate wording for numbers, and do not shame readers or present any single product as the answer.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "mathematics_and_logic_for_everyday_life": {
+      "label": "Everyday mathematics, logic and clear thinking",
+      "subjects": [
+        "compound interest explained simply, for education only",
+        "probability in daily life",
+        "why 50% off then 20% off is not 70% off",
+        "averages and why they can mislead",
+        "logic puzzles that train critical thinking",
+        "common mistakes with statistics and graphs",
+        "the birthday paradox",
+        "how to estimate quickly and sensibly",
+        "how charts and graphs can mislead",
+        "the history of zero and the number system we use",
+        "correlation versus causation",
+        "base rates and why rare events confuse us"
+      ],
+      "angles": [
+        "a plain-language explainer with a simple worked example",
+        "myths versus reality",
+        "the common mistakes people make and how to fix them",
+        "a short lesson followed by a quick original quiz with answers",
+        "a puzzle-led story with a clear takeaway"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Check every calculation twice and show simple worked examples; any numeric example must be labelled illustrative.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "geography_and_world_wonders": {
+      "label": "Geography, places and wonders of the world",
+      "subjects": [
+        "natural wonders of the world and why they formed",
+        "the world's great deserts and how life survives in them",
+        "great rivers and the civilizations they shaped",
+        "island nations and what life on islands is like",
+        "major mountain ranges and how they were formed",
+        "how time zones work and why some countries break the pattern",
+        "the world's oceans and why they matter",
+        "climate zones explained",
+        "cities with unusual features",
+        "borders: how some of the world's boundaries were drawn",
+        "lakes, waterfalls and caves that amaze scientists",
+        "volcanoes: how they work and where they are"
+      ],
+      "angles": [
+        "a plain-language explainer with a vivid, accurate example",
+        "myths versus facts",
+        "a short tour with a clear takeaway at each stop",
+        "a 'how it formed' explanation in simple steps"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Use approximate wording for measurements and counts, avoid political claims about disputed borders beyond neutral description, and treat every place and its people respectfully.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "remote_work_and_future_of_work": {
+      "label": "Remote work, freelancing and the future of work",
+      "subjects": [
+        "remote work: benefits, challenges and common fixes",
+        "freelancing basics: how people find and keep clients",
+        "the gig economy explained",
+        "how to protect work-life balance when working from home",
+        "digital nomads: the lifestyle and its trade-offs",
+        "collaboration tools and the problem of tool overload",
+        "working across time zones",
+        "how automation changes tasks more than whole careers",
+        "upskilling: how to keep your skills current",
+        "building a side income step by step",
+        "changing careers later in life",
+        "portfolio careers: working in more than one field"
+      ],
+      "angles": [
+        "a step-by-step plan readers can start today",
+        "the common mistakes people make and how to fix them",
+        "myths versus reality",
+        "a comparison of two paths with an honest verdict",
+        "a story-driven guide with a clear takeaway at each step"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Educational only: no promised results, no investment, legal or medical advice, no invented case studies or statistics. Do not promise income or job security, and mention that tax, contract and labor rules differ by country.  No product promotion, affiliate-style recommendations or external links."
+    },
+    "proverbs_and_wise_sayings": {
+      "label": "Proverbs, sayings and the ideas behind them",
+      "subjects": [
+        "'a small leak will sink a great ship': meaning and background",
+        "'for want of a nail': the old rhyme about small causes and big results",
+        "'there is no such thing as a free lunch': where the saying comes from",
+        "'a stitch in time saves nine': why early action pays",
+        "'do not put all your eggs in one basket': the idea behind diversification",
+        "'knowledge is power': history of the idea",
+        "'luck is preparation meeting opportunity': a saying with a commonly cited origin",
+        "'slow and steady wins the race': the fable behind it",
+        "proverbs from around the world that say the same thing",
+        "why proverbs stick in memory",
+        "old sayings and modern science: which ones hold up",
+        "how a proverb can become a personal rule"
+      ],
+      "angles": [
+        "a plain-language explainer: meaning, origin and a modern example",
+        "myths versus facts about who said what",
+        "a short lesson with a clear takeaway",
+        "an original short parable inspired by the idea, labelled as fiction"
+      ],
+      "guidelines": "Use only well-documented, mainstream facts; prefer approximate wording over precise figures you are not certain about; never invent dates, studies, names, quotes or statistics; list every specific claim in fact_check_notes. Use a quotation only when you are highly confident it is real, short and correctly attributed; otherwise paraphrase. Many sayings are wrongly attributed; where the origin is uncertain say it is commonly attributed or of unknown origin. Do not reproduce long passages from books, and keep any quotation under about a dozen words.  No product promotion, affiliate-style recommendations or external links."
     }
   },
-  "version": "2.0",
+  "version": "2.1",
   "last_reviewed": "2026-11-16"
 }
